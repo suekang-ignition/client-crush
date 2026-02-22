@@ -1,0 +1,1943 @@
+{
+  "meta": {
+    "generated": "2026-02-19T15:30:00Z",
+    "firmName": "Pinnacle Advisory Group",
+    "totalClients": 10,
+    "reviewedCount": 0,
+    "remainingCount": 10,
+    "sessionMode": "pricing_pilot",
+    "sessionLabel": "Fixed Fee Pilot — Start with 10",
+    "firmPricingHealthScore": 52,
+    "firmPricingHealthLabel": "Developing",
+    "firmPricingHealthContext": "4 of 10 clients are fully on fixed fee. 4 have mixed models with $0-priced services leaking value. 2 are in operational distress (overdue payments, expired contracts). Firms at this stage typically unlock $25K–$50K in annual uplift by consolidating to fixed fee packages.",
+    "firmRevenueAtRisk": {
+      "failedPayments": 350,
+      "outstandingOverdue": 3900,
+      "expiringCards": 1,
+      "endingSoonProposals": 1,
+      "expiredProposals": 1,
+      "unpricedServicesAnnualisedLeakage": 5460,
+      "totalAtRisk": 9710
+    },
+    "peerBenchmark": {
+      "avgWriteOffRate": 0.22,
+      "avgUpliftOnFixedFeeSwitch": 0.16,
+      "pctFirmsWhoCompletedPilot": 0.71,
+      "avgTimeToCompleteFirstTen": "6 weeks",
+      "source": "Ignition platform aggregate — anonymised, firms with 200–500 clients, FY2025"
+    }
+  },
+  "clients": [
+    {
+      "id": "cli_i9j0k1l2m3n4o5p6q7r8",
+      "clientRef": "CLI-3210",
+      "name": "Jennifer Kowalski",
+      "company": "Kowalski Architecture Studio",
+      "status": "active",
+      "partner": { "name": "Daniel Tran", "email": "daniel.tran@pinnacle.cpa" },
+      "manager": { "name": "Ava Moretti", "email": "ava.moretti@pinnacle.cpa" },
+      "primaryContact": {
+        "name": "Jennifer Kowalski",
+        "email": "jennifer@kowalskiarchitecture.com",
+        "phone": "+12064447102"
+      },
+      "tags": ["qboclass-d-tran", "architecture", "flagship"],
+      "createdDate": "2020-03-01",
+      "paymentMethods": [
+        {
+          "type": "bank_account",
+          "last4": "8829",
+          "accountHolder": "Kowalski Architecture Studio PLLC",
+          "status": "active",
+          "verificationStatus": "verified"
+        }
+      ],
+      "cardFeePassthrough": false,
+      "connectedApps": {
+        "quickbooks": { "linked": true, "customerId": "5042" },
+        "proconnect": true
+      },
+      "proposals": {
+        "draft": 0,
+        "awaitingAcceptance": 0,
+        "accepted": 3,
+        "completed": 4,
+        "lost": 0,
+        "active": [
+          {
+            "proposalNumber": "PROP-22890",
+            "title": "Comprehensive Accounting & Advisory",
+            "startDate": "2022-07-01",
+            "endDate": "2025-06-30",
+            "duration": "36 months",
+            "minimumValue": 132000,
+            "isRenewal": true,
+            "previousValue": 120000,
+            "renewalStatus": "not_due"
+          }
+        ]
+      },
+      "services": [
+        {
+          "name": "Bookkeeping - Monthly (Full Service)",
+          "category": "Outsourced Accounting",
+          "price": 6000,
+          "billingFrequency": "monthly",
+          "billingMode": "automatic",
+          "billingStatus": "active",
+          "startDate": "2022-07-01",
+          "priceType": "fixed"
+        },
+        {
+          "name": "Tax Return - Federal - 1120S + 4 States",
+          "category": "Tax Preparation",
+          "price": 6000,
+          "billingFrequency": "fixed_annual",
+          "billingMode": "automatic",
+          "billingStatus": "active",
+          "startDate": "2022-07-01",
+          "priceType": "fixed"
+        },
+        {
+          "name": "Financial Planning - Quarterly Reviews",
+          "category": "Advisory",
+          "price": 2400,
+          "billingFrequency": "quarterly",
+          "billingMode": "automatic",
+          "billingStatus": "active",
+          "startDate": "2022-07-01",
+          "priceType": "fixed"
+        },
+        {
+          "name": "Fractional CFO Services",
+          "category": "Advisory",
+          "price": 3000,
+          "billingFrequency": "monthly",
+          "billingMode": "automatic",
+          "billingStatus": "active",
+          "startDate": "2022-07-01",
+          "priceType": "fixed"
+        },
+        {
+          "name": "Payroll Processing - Bi-weekly (35 employees)",
+          "category": "Payroll",
+          "price": 850,
+          "billingFrequency": "bi_weekly",
+          "billingMode": "automatic",
+          "billingStatus": "active",
+          "startDate": "2022-07-01",
+          "priceType": "fixed"
+        }
+      ],
+      "activeServiceCount": 5,
+      "billingSchedule": {
+        "nextBill": {
+          "date": "2026-03-01",
+          "amount": 9000,
+          "serviceName": "Monthly Services Package",
+          "billingMode": "automatic"
+        },
+        "pendingManualBills": []
+      },
+      "invoices": {
+        "total": 142,
+        "paid": 142,
+        "unpaid": 0,
+        "failed": 0,
+        "voided": 0,
+        "totalBilled": 721000,
+        "outstandingAmount": 0,
+        "recent": [
+          { "invoiceNumber": "#62950", "date": "2026-02-14", "amount": 850, "status": "paid" },
+          { "invoiceNumber": "#62901", "date": "2026-02-01", "amount": 9000, "status": "paid" },
+          { "invoiceNumber": "#62350", "date": "2026-01-31", "amount": 850, "status": "paid" },
+          { "invoiceNumber": "#62311", "date": "2026-01-01", "amount": 9000, "status": "paid" },
+          { "invoiceNumber": "#61721", "date": "2025-12-01", "amount": 9000, "status": "paid" }
+        ]
+      },
+      "activity": [
+        { "event": "Invoice paid", "date": "2026-02-16T08:05:00Z", "detail": "Invoice #62950 - $850.00" },
+        { "event": "Invoice paid", "date": "2026-02-01T09:30:00Z", "detail": "Invoice #62901 - $9,000.00" },
+        { "event": "Invoice created", "date": "2026-02-01T00:00:00Z", "detail": "Monthly Services Package" },
+        { "event": "Client created by Daniel Tran", "date": "2020-03-01T09:00:00Z" }
+      ],
+      "lastActivity": { "event": "Invoice paid", "date": "2026-02-16T08:05:00Z" },
+      "pricingModel": {
+        "currentModel": "fixed_recurring",
+        "components": [
+          { "service": "Bookkeeping - Monthly (Full Service)", "type": "fixed_recurring", "monthlyValue": 6000 },
+          { "service": "Tax Return - Federal - 1120S + 4 States", "type": "fixed_annual", "annualValue": 6000 },
+          { "service": "Financial Planning - Quarterly Reviews", "type": "fixed_quarterly", "quarterlyValue": 2400 },
+          { "service": "Fractional CFO Services", "type": "fixed_recurring", "monthlyValue": 3000 },
+          { "service": "Payroll Processing - Bi-weekly (35 employees)", "type": "fixed_recurring", "biweeklyValue": 850 }
+        ],
+        "annualBilledValue": 132000,
+        "estimatedUnbilledValue": 0,
+        "hasCompletionBilled": false,
+        "hasUnpricedServices": false,
+        "unpricedAnnualLeakage": 0
+      },
+      "fixedFeeReadiness": {
+        "score": 98,
+        "label": "Flagship Fixed Fee Client",
+        "colour": "green",
+        "rationale": "6-year tenure, 142 consecutive paid invoices, zero failures, $132K ARR with fractional CFO services. This is your proof-of-concept client for comprehensive fixed fee packaging.",
+        "estimatedCurrentAnnualValue": 132000,
+        "annualUncapturedValue": 0,
+        "suggestedFixedFeeRange": { "low": 138000, "mid": 144000, "high": 150000 },
+        "suggestedUpliftPercent": 9,
+        "conversionRisk": "none",
+        "conversionRiskReason": "Fully converted and thriving. Opportunity is strategic retention and potential scope expansion."
+      },
+      "computed": {
+        "contractValue": 132000,
+        "revenueChange": 10.0,
+        "revenueDirection": "growing",
+        "paymentScore": 98,
+        "paymentScoreLabel": "Excellent",
+        "clientTenure": "5 years, 11 months",
+        "proposalEndingSoon": false,
+        "proposalExpired": false,
+        "daysUntilProposalExpiry": 497,
+        "hasPaymentMethodOnFile": true,
+        "paymentMethodExpiringSoon": false,
+        "hasFailedPayments": false,
+        "hasOutstandingInvoice": false,
+        "outstandingInvoiceAmount": 0,
+        "pendingManualBillValue": 0
+      },
+      "flags": ["flagship_client", "fixed_fee_proof_point", "strategic_relationship"],
+      "revenueOpportunity": {
+        "type": "retention_and_expansion",
+        "immediateRecovery": 0,
+        "annualUpliftIfConverted": 0,
+        "totalOpportunityValue": 12000,
+        "urgency": "low",
+        "urgencyReason": "Flagship client in excellent standing. Focus is on retention and surfacing expansion opportunities."
+      },
+      "confidenceEngine": {
+        "primaryAlert": "strategic_relationship",
+        "alertLabel": "Flagship Client",
+        "alertColour": "green",
+        "headline": "Jennifer is your highest-value fixed-fee client. 142 consecutive paid invoices, $132K ARR, 6-year tenure. A quarterly strategic review locks in the relationship.",
+        "justinKurnMaths": null,
+        "peerProof": "\"Clients at this scale and tenure are the foundation of a premium practice. Proactive quarterly reviews signal you're operating as a strategic partner, not just a service provider.\" — Practice management consultant",
+        "identityReframe": "Jennifer trusts you with $132K annually and fractional CFO responsibilities. A proactive check-in reinforces that you're invested in her success, not just collecting fees.",
+        "outcomeAfterAction": "A quarterly review call with a $132K client typically surfaces expansion opportunities or reinforces loyalty. At this scale, retention is more valuable than acquisition."
+      },
+      "recommendedAction": {
+        "action": "Schedule quarterly strategic review",
+        "priority": "medium",
+        "reasoning": "Flagship client, 142 consecutive payments, $132K ARR, fractional CFO relationship. Perfect payment history (98). Proactive quarterly review reinforces strategic partnership and surfaces potential scope expansion. Retention at this scale is critical.",
+        "ignitionAction": "schedule_meeting",
+        "ignitionActionLabel": "Schedule Strategic Review",
+        "ignitionActionUrl": "/clients/cli_i9j0k1l2m3n4o5p6q7r8/meetings"
+      },
+      "availableActions": [
+        { "id": "schedule_meeting", "label": "Schedule Strategic Review", "destination": "/clients/cli_i9j0k1l2m3n4o5p6q7r8/meetings", "confidence_engine_primary": true },
+        { "id": "create_deal", "label": "Create Expansion Opportunity", "destination": "/deals", "confidence_engine_primary": false },
+        { "id": "view_activity", "label": "View Activity Log", "destination": "/clients/cli_i9j0k1l2m3n4o5p6q7r8/activity", "confidence_engine_primary": false },
+        { "id": "plan_for_later", "label": "Plan for Later", "destination": null, "confidence_engine_primary": false },
+        { "id": "skip", "label": "Skip for Now", "destination": null, "confidence_engine_primary": false }
+      ],
+      "triageStatus": null
+    },
+    {
+      "id": "cli_g7h8i9j0k1l2m3n4o5p6",
+      "clientRef": "CLI-4890",
+      "name": "Olivia Martinez",
+      "company": "Martinez Manufacturing LLC",
+      "status": "active",
+      "partner": { "name": "Ava Moretti", "email": "ava.moretti@pinnacle.cpa" },
+      "manager": { "name": "Pinnacle Admin", "email": "admin@pinnacle.cpa" },
+      "primaryContact": {
+        "name": "Olivia Martinez",
+        "email": "olivia@martinezmanufacturing.com",
+        "phone": "+13235554782"
+      },
+      "tags": ["qboclass-a-moretti", "manufacturing"],
+      "createdDate": "2021-04-10",
+      "paymentMethods": [
+        {
+          "type": "bank_account",
+          "last4": "3392",
+          "accountHolder": "Martinez Manufacturing LLC",
+          "status": "active",
+          "verificationStatus": "verified"
+        }
+      ],
+      "cardFeePassthrough": false,
+      "connectedApps": {
+        "quickbooks": { "linked": true, "customerId": "8831" },
+        "proconnect": true
+      },
+      "proposals": {
+        "draft": 0,
+        "awaitingAcceptance": 0,
+        "accepted": 2,
+        "completed": 3,
+        "lost": 0,
+        "active": [
+          {
+            "proposalNumber": "PROP-24102",
+            "title": "Manufacturing Accounting & Advisory",
+            "startDate": "2023-05-01",
+            "endDate": "2026-04-30",
+            "duration": "36 months",
+            "minimumValue": 74400,
+            "isRenewal": true,
+            "previousValue": 68400,
+            "renewalStatus": "not_due"
+          }
+        ]
+      },
+      "services": [
+        {
+          "name": "Bookkeeping - Monthly (Multi-Entity)",
+          "category": "Outsourced Accounting",
+          "price": 4200,
+          "billingFrequency": "monthly",
+          "billingMode": "automatic",
+          "billingStatus": "active",
+          "startDate": "2023-05-01",
+          "priceType": "fixed"
+        },
+        {
+          "name": "Tax Return - Federal - 1120 + 3 States",
+          "category": "Tax Preparation",
+          "price": 4800,
+          "billingFrequency": "fixed_annual",
+          "billingMode": "automatic",
+          "billingStatus": "active",
+          "startDate": "2023-05-01",
+          "priceType": "fixed"
+        },
+        {
+          "name": "Financial Reporting - Monthly P&L Package",
+          "category": "Advisory",
+          "price": 1200,
+          "billingFrequency": "monthly",
+          "billingMode": "automatic",
+          "billingStatus": "active",
+          "startDate": "2023-05-01",
+          "priceType": "fixed"
+        },
+        {
+          "name": "Tax Planning - Annual Strategy Session",
+          "category": "Tax Advisory",
+          "price": 2400,
+          "billingFrequency": "annual",
+          "billingMode": "automatic",
+          "billingStatus": "active",
+          "startDate": "2023-05-01",
+          "priceType": "fixed"
+        }
+      ],
+      "activeServiceCount": 4,
+      "billingSchedule": {
+        "nextBill": {
+          "date": "2026-03-01",
+          "amount": 5400,
+          "serviceName": "Monthly Services Package",
+          "billingMode": "automatic"
+        },
+        "pendingManualBills": []
+      },
+      "invoices": {
+        "total": 52,
+        "paid": 52,
+        "unpaid": 0,
+        "failed": 0,
+        "voided": 0,
+        "totalBilled": 276000,
+        "outstandingAmount": 0,
+        "recent": [
+          { "invoiceNumber": "#62900", "date": "2026-02-01", "amount": 5400, "status": "paid" },
+          { "invoiceNumber": "#62310", "date": "2026-01-01", "amount": 5400, "status": "paid" },
+          { "invoiceNumber": "#61720", "date": "2025-12-01", "amount": 5400, "status": "paid" },
+          { "invoiceNumber": "#61130", "date": "2025-11-01", "amount": 5400, "status": "paid" },
+          { "invoiceNumber": "#60540", "date": "2025-10-01", "amount": 5400, "status": "paid" }
+        ]
+      },
+      "activity": [
+        { "event": "Invoice paid", "date": "2026-02-02T08:15:00Z", "detail": "Invoice #62900 - $5,400.00" },
+        { "event": "Invoice created", "date": "2026-02-01T00:00:00Z", "detail": "Monthly Services Package" },
+        { "event": "Client created by Ava Moretti", "date": "2021-04-10T10:00:00Z" }
+      ],
+      "lastActivity": { "event": "Invoice paid", "date": "2026-02-02T08:15:00Z" },
+      "pricingModel": {
+        "currentModel": "fixed_recurring",
+        "components": [
+          { "service": "Bookkeeping - Monthly (Multi-Entity)", "type": "fixed_recurring", "monthlyValue": 4200 },
+          { "service": "Tax Return - Federal - 1120 + 3 States", "type": "fixed_annual", "annualValue": 4800 },
+          { "service": "Financial Reporting - Monthly P&L Package", "type": "fixed_recurring", "monthlyValue": 1200 },
+          { "service": "Tax Planning - Annual Strategy Session", "type": "fixed_annual", "annualValue": 2400 }
+        ],
+        "annualBilledValue": 74400,
+        "estimatedUnbilledValue": 0,
+        "hasCompletionBilled": false,
+        "hasUnpricedServices": false,
+        "unpricedAnnualLeakage": 0
+      },
+      "fixedFeeReadiness": {
+        "score": 92,
+        "label": "Already Fixed Fee — Expand",
+        "colour": "green",
+        "rationale": "Nearly 5-year tenure, perfect payment record, already on comprehensive fixed fee. Opportunity is fractional CFO services given manufacturing complexity.",
+        "estimatedCurrentAnnualValue": 74400,
+        "annualUncapturedValue": 0,
+        "suggestedFixedFeeRange": { "low": 90000, "mid": 96000, "high": 102000 },
+        "suggestedUpliftPercent": 29,
+        "conversionRisk": "none",
+        "conversionRiskReason": "Already converted. Strong relationship and manufacturing complexity make this an ideal fractional CFO upsell."
+      },
+      "computed": {
+        "contractValue": 74400,
+        "revenueChange": 8.8,
+        "revenueDirection": "growing",
+        "paymentScore": 95,
+        "paymentScoreLabel": "Excellent",
+        "clientTenure": "4 years, 10 months",
+        "proposalEndingSoon": false,
+        "proposalExpired": false,
+        "daysUntilProposalExpiry": 435,
+        "hasPaymentMethodOnFile": true,
+        "paymentMethodExpiringSoon": false,
+        "hasFailedPayments": false,
+        "hasOutstandingInvoice": false,
+        "outstandingInvoiceAmount": 0,
+        "pendingManualBillValue": 0
+      },
+      "flags": ["flagship_client", "fixed_fee_proof_point", "cas_expansion_ready"],
+      "revenueOpportunity": {
+        "type": "cas_expansion",
+        "immediateRecovery": 0,
+        "annualUpliftIfConverted": 21600,
+        "totalOpportunityValue": 21600,
+        "urgency": "medium",
+        "urgencyReason": "Perfect payment record and manufacturing complexity make this an ideal fractional CFO expansion opportunity."
+      },
+      "confidenceEngine": {
+        "primaryAlert": "cas_expansion_ready",
+        "alertLabel": "Strategic Growth",
+        "alertColour": "green",
+        "headline": "Olivia has been a perfect client for nearly 5 years. Manufacturing complexity makes this an ideal fractional CFO opportunity worth $20K+ ARR.",
+        "justinKurnMaths": null,
+        "peerProof": "\"Manufacturing clients with multi-entity structures typically graduate into fractional CFO services within 3–5 years. The P&L reporting you're doing is the foundation.\" — CAS practice leader, mid-market firm",
+        "identityReframe": "You're already her financial operations partner. Fractional CFO services are a natural evolution, not a stretch.",
+        "outcomeAfterAction": "Proposing fractional CFO services to a $74K client with perfect payment history and 5-year tenure is low-risk, high-reward. Manufacturing complexity justifies the scope."
+      },
+      "recommendedAction": {
+        "action": "Propose fractional CFO services",
+        "priority": "medium",
+        "reasoning": "Perfect payment record (95), 52 consecutive paid invoices, $74K ARR, manufacturing complexity. Ideal candidate for fractional CFO expansion given multi-entity structure and existing financial reporting relationship. Could add $20K–$25K ARR.",
+        "ignitionAction": "create_proposal",
+        "ignitionActionLabel": "Draft CFO Services Proposal",
+        "ignitionActionUrl": "/clients/cli_g7h8i9j0k1l2m3n4o5p6/proposals/new"
+      },
+      "availableActions": [
+        { "id": "create_proposal", "label": "Draft CFO Services Proposal", "destination": "/clients/cli_g7h8i9j0k1l2m3n4o5p6/proposals/new", "confidence_engine_primary": true },
+        { "id": "create_deal", "label": "Create Strategic Expansion Deal", "destination": "/deals", "confidence_engine_primary": false },
+        { "id": "view_activity", "label": "View Activity Log", "destination": "/clients/cli_g7h8i9j0k1l2m3n4o5p6/activity", "confidence_engine_primary": false },
+        { "id": "plan_for_later", "label": "Plan for Later", "destination": null, "confidence_engine_primary": false },
+        { "id": "skip", "label": "Skip for Now", "destination": null, "confidence_engine_primary": false }
+      ],
+      "triageStatus": null
+    },
+    {
+      "id": "cli_e5f6g7h8i9j0k1l2m3n4",
+      "clientRef": "CLI-6127",
+      "name": "Emily Zhang",
+      "company": "Zhang Digital Agency",
+      "status": "at_risk",
+      "partner": { "name": "Preethi Nair", "email": "preethi.nair@pinnacle.cpa" },
+      "manager": { "name": "Rachel Osei", "email": "rachel.osei@pinnacle.cpa" },
+      "primaryContact": {
+        "name": "Emily Zhang",
+        "email": "emily@zhangdigital.com",
+        "phone": "+14156668921"
+      },
+      "tags": ["qboclass-p-nair", "digital-agency"],
+      "createdDate": "2023-09-20",
+      "paymentMethods": [
+        {
+          "type": "card",
+          "brand": "Visa",
+          "last4": "8421",
+          "expiry": "03/26",
+          "cardType": "credit",
+          "status": "active",
+          "expiresInDays": 11
+        }
+      ],
+      "cardFeePassthrough": true,
+      "connectedApps": {
+        "quickbooks": { "linked": true, "customerId": "20184" },
+        "proconnect": false
+      },
+      "proposals": {
+        "draft": 0,
+        "awaitingAcceptance": 0,
+        "accepted": 1,
+        "completed": 0,
+        "lost": 0,
+        "active": [
+          {
+            "proposalNumber": "PROP-29871",
+            "title": "Digital Agency Accounting Package",
+            "startDate": "2024-03-01",
+            "endDate": "2026-02-28",
+            "duration": "24 months",
+            "minimumValue": 49200,
+            "isRenewal": false,
+            "previousValue": null,
+            "renewalStatus": "not_yet_created"
+          }
+        ]
+      },
+      "services": [
+        {
+          "name": "Bookkeeping - Monthly",
+          "category": "Outsourced Accounting",
+          "price": 2800,
+          "billingFrequency": "monthly",
+          "billingMode": "automatic",
+          "billingStatus": "active",
+          "startDate": "2024-03-01",
+          "priceType": "fixed"
+        },
+        {
+          "name": "Tax Return - Federal - 1120S + 1 State",
+          "category": "Tax Preparation",
+          "price": 2400,
+          "billingFrequency": "on_completion",
+          "billingMode": "manual",
+          "billingStatus": "unbilled",
+          "startDate": "2024-03-01",
+          "priceType": "fixed",
+          "revenueRisk": "completion_billed_not_yet_triggered"
+        },
+        {
+          "name": "Payroll Processing - Semi-monthly",
+          "category": "Payroll",
+          "price": 300,
+          "billingFrequency": "semi_monthly",
+          "billingMode": "automatic",
+          "billingStatus": "active",
+          "startDate": "2024-03-01",
+          "priceType": "fixed"
+        }
+      ],
+      "activeServiceCount": 3,
+      "billingSchedule": {
+        "nextBill": {
+          "date": "2026-03-01",
+          "amount": 2800,
+          "serviceName": "Bookkeeping - Monthly",
+          "billingMode": "automatic"
+        },
+        "pendingManualBills": [
+          {
+            "serviceName": "Tax Return - Federal - 1120S + 1 State",
+            "amount": 2400,
+            "status": "unbilled",
+            "triggerCondition": "on_completion",
+            "revenueRisk": "$2,400 completion bill not yet triggered. With payment issues present, risk of dispute at completion."
+          }
+        ]
+      },
+      "invoices": {
+        "total": 30,
+        "paid": 26,
+        "unpaid": 3,
+        "failed": 1,
+        "voided": 0,
+        "totalBilled": 46800,
+        "outstandingAmount": 3400,
+        "recent": [
+          { "invoiceNumber": "#62880", "date": "2026-02-01", "amount": 2800, "status": "unpaid", "daysOverdue": 18 },
+          { "invoiceNumber": "#62420", "date": "2026-01-15", "amount": 300, "status": "unpaid", "daysOverdue": 35 },
+          { "invoiceNumber": "#62240", "date": "2026-01-01", "amount": 300, "status": "unpaid", "daysOverdue": 49 },
+          { "invoiceNumber": "#61870", "date": "2025-12-15", "amount": 300, "status": "paid" },
+          { "invoiceNumber": "#61580", "date": "2025-12-01", "amount": 2800, "status": "failed", "failedDate": "2025-12-03", "failureReason": "card_declined" }
+        ]
+      },
+      "activity": [
+        { "event": "Invoice created", "date": "2026-02-01T00:00:00Z", "detail": "Bookkeeping - Monthly - $2,800.00" },
+        { "event": "Reminder sent", "date": "2026-01-20T14:00:00Z", "detail": "Payment reminder for outstanding invoices" },
+        { "event": "Payment failed", "date": "2025-12-03T08:45:00Z", "detail": "Invoice #61580 - card declined" },
+        { "event": "Client created by Preethi Nair", "date": "2023-09-20T10:15:00Z" }
+      ],
+      "lastActivity": { "event": "Invoice created", "date": "2026-02-01T00:00:00Z" },
+      "pricingModel": {
+        "currentModel": "mixed",
+        "components": [
+          { "service": "Bookkeeping - Monthly", "type": "fixed_recurring", "monthlyValue": 2800 },
+          { "service": "Tax Return - Federal - 1120S + 1 State", "type": "completion_billed", "annualValue": 2400 },
+          { "service": "Payroll Processing - Semi-monthly", "type": "fixed_recurring", "semiMonthlyValue": 300 }
+        ],
+        "annualBilledValue": 49200,
+        "estimatedUnbilledValue": 2400,
+        "hasCompletionBilled": true,
+        "hasUnpricedServices": false,
+        "unpricedAnnualLeakage": 0
+      },
+      "fixedFeeReadiness": {
+        "score": 38,
+        "label": "Resolve First, Then Convert",
+        "colour": "red",
+        "rationale": "Card expiring in 11 days, 1 failed payment, 3 unpaid invoices totaling $3,400, revenue down 18%. Stabilize the payment situation before any pricing conversation.",
+        "estimatedCurrentAnnualValue": 49200,
+        "annualUncapturedValue": 2400,
+        "suggestedFixedFeeRange": { "low": 46800, "mid": 51600, "high": 56400 },
+        "suggestedUpliftPercent": 5,
+        "conversionRisk": "high",
+        "conversionRiskReason": "Do not introduce pricing change while relationship is under stress. Stabilize first."
+      },
+      "computed": {
+        "contractValue": 49200,
+        "revenueChange": -18.0,
+        "revenueDirection": "declining",
+        "paymentScore": 54,
+        "paymentScoreLabel": "Poor",
+        "clientTenure": "2 years, 5 months",
+        "proposalEndingSoon": true,
+        "proposalExpired": false,
+        "daysUntilProposalExpiry": 9,
+        "hasPaymentMethodOnFile": true,
+        "paymentMethodExpiringSoon": true,
+        "hasFailedPayments": true,
+        "hasOutstandingInvoice": true,
+        "outstandingInvoiceAmount": 3400,
+        "pendingManualBillValue": 2400
+      },
+      "flags": [
+        "urgent_payment_risk",
+        "expiring_card",
+        "revenue_declining",
+        "failed_payment",
+        "overdue_payment",
+        "proposal_ending_soon"
+      ],
+      "revenueOpportunity": {
+        "type": "urgent_payment_stabilization",
+        "immediateRecovery": 3400,
+        "annualUpliftIfConverted": 0,
+        "totalOpportunityValue": 3400,
+        "urgency": "urgent",
+        "urgencyReason": "Card expires in 11 days with $3,400 outstanding. Proposal expires in 9 days. Without immediate action, this $49K client is at risk of churn."
+      },
+      "confidenceEngine": {
+        "primaryAlert": "urgent_payment_risk",
+        "alertLabel": "Urgent — Act Today",
+        "alertColour": "red",
+        "headline": "Emily's card expires in 11 days with $3,400 outstanding and proposal expiring in 9 days. This needs resolution before the next billing cycle.",
+        "justinKurnMaths": null,
+        "peerProof": null,
+        "identityReframe": "Resolving this now protects a $49K engagement. Once stabilized, Emily is actually a strong fixed fee candidate — her revenue volatility is exactly what fixed fee was designed to smooth out.",
+        "outcomeAfterAction": "Updating the card now prevents a billing failure cascade. Once payment is stable, flag this client for a fixed fee conversion conversation in the next session."
+      },
+      "recommendedAction": {
+        "action": "Request payment method update — urgently",
+        "priority": "urgent",
+        "reasoning": "Card expires in 11 days. 1 failed payment + 3 unpaid invoices totaling $3,400. Proposal expires in 9 days. Revenue down 18%. Risk of losing a $49K client to a billing cascade. Fix the payment method immediately, collect outstanding, then create renewal proposal.",
+        "ignitionAction": "request_payment_method",
+        "ignitionActionLabel": "Request Card Update",
+        "ignitionActionUrl": "/clients/cli_e5f6g7h8i9j0k1l2m3n4/summary"
+      },
+      "availableActions": [
+        { "id": "request_payment_method", "label": "Request Card Update", "destination": "/clients/cli_e5f6g7h8i9j0k1l2m3n4/summary", "confidence_engine_primary": true },
+        { "id": "send_payment_reminder", "label": "Send Payment Reminder ($3,400)", "destination": "/payments/collections/reminders", "confidence_engine_primary": true },
+        { "id": "view_activity", "label": "View Activity Log", "destination": "/clients/cli_e5f6g7h8i9j0k1l2m3n4/activity", "confidence_engine_primary": false },
+        { "id": "plan_for_later", "label": "Plan for Later", "destination": null, "confidence_engine_primary": false },
+        { "id": "skip", "label": "Skip for Now", "destination": null, "confidence_engine_primary": false }
+      ],
+      "triageStatus": null
+    },
+    {
+      "id": "cli_h8i9j0k1l2m3n4o5p6q7",
+      "clientRef": "CLI-5488",
+      "name": "Raj Patel",
+      "company": "Patel Hospitality Group",
+      "status": "active",
+      "partner": { "name": "Marcus Webb", "email": "marcus.webb@pinnacle.cpa" },
+      "manager": { "name": "Rachel Osei", "email": "rachel.osei@pinnacle.cpa" },
+      "primaryContact": {
+        "name": "Raj Patel",
+        "email": "raj@patelhospitality.com",
+        "phone": "+17025556891"
+      },
+      "tags": ["qboclass-m-webb", "hospitality"],
+      "createdDate": "2022-09-15",
+      "paymentMethods": [
+        {
+          "type": "card",
+          "brand": "Visa",
+          "last4": "7734",
+          "expiry": "10/27",
+          "cardType": "business",
+          "status": "active"
+        }
+      ],
+      "cardFeePassthrough": true,
+      "connectedApps": {
+        "quickbooks": { "linked": true, "customerId": "12847" },
+        "proconnect": true
+      },
+      "proposals": {
+        "draft": 0,
+        "awaitingAcceptance": 0,
+        "accepted": 1,
+        "completed": 1,
+        "lost": 0,
+        "active": [
+          {
+            "proposalNumber": "PROP-27655",
+            "title": "Multi-Entity Hospitality Accounting",
+            "startDate": "2024-10-01",
+            "endDate": "2025-09-30",
+            "duration": "12 months",
+            "minimumValue": 42000,
+            "isRenewal": true,
+            "previousValue": 39600,
+            "renewalStatus": "not_yet_created"
+          }
+        ]
+      },
+      "services": [
+        {
+          "name": "Bookkeeping - Monthly (3 Entities)",
+          "category": "Outsourced Accounting",
+          "price": 2400,
+          "billingFrequency": "monthly",
+          "billingMode": "automatic",
+          "billingStatus": "active",
+          "startDate": "2024-10-01",
+          "priceType": "fixed"
+        },
+        {
+          "name": "Tax Return - Federal - 1065 x 3 + States",
+          "category": "Tax Preparation",
+          "price": 7200,
+          "billingFrequency": "on_completion",
+          "billingMode": "manual",
+          "billingStatus": "unbilled",
+          "startDate": "2024-10-01",
+          "priceType": "fixed",
+          "revenueRisk": "completion_billed_not_yet_triggered"
+        },
+        {
+          "name": "Payroll Processing - Bi-weekly",
+          "category": "Payroll",
+          "price": 400,
+          "billingFrequency": "bi_weekly",
+          "billingMode": "automatic",
+          "billingStatus": "active",
+          "startDate": "2024-10-01",
+          "priceType": "fixed"
+        },
+        {
+          "name": "Sales Tax Filing - Monthly (3 States)",
+          "category": "Tax Compliance",
+          "price": 0,
+          "billingFrequency": "included",
+          "billingMode": "automatic",
+          "billingStatus": "active",
+          "startDate": "2024-10-01",
+          "priceType": "included",
+          "revenueRisk": "unpriced_delivered_service",
+          "marketRateEstimate": 2400
+        }
+      ],
+      "activeServiceCount": 4,
+      "billingSchedule": {
+        "nextBill": {
+          "date": "2026-02-28",
+          "amount": 400,
+          "serviceName": "Payroll Processing",
+          "billingMode": "automatic"
+        },
+        "pendingManualBills": [
+          {
+            "serviceName": "Tax Return - Federal - 1065 x 3 + States",
+            "amount": 7200,
+            "status": "unbilled",
+            "triggerCondition": "on_completion",
+            "revenueRisk": "$7,200 completion bill for 3 entities. Timing creates lumpy billing — fixed fee smooths this."
+          }
+        ]
+      },
+      "invoices": {
+        "total": 78,
+        "paid": 76,
+        "unpaid": 2,
+        "failed": 0,
+        "voided": 0,
+        "totalBilled": 68400,
+        "outstandingAmount": 800,
+        "recent": [
+          { "invoiceNumber": "#62740", "date": "2026-02-14", "amount": 400, "status": "paid" },
+          { "invoiceNumber": "#62608", "date": "2026-02-01", "amount": 2400, "status": "paid" },
+          { "invoiceNumber": "#62102", "date": "2026-01-31", "amount": 400, "status": "unpaid", "daysOverdue": 19 },
+          { "invoiceNumber": "#61840", "date": "2026-01-17", "amount": 400, "status": "unpaid", "daysOverdue": 33 },
+          { "invoiceNumber": "#61505", "date": "2026-01-01", "amount": 2400, "status": "paid" }
+        ]
+      },
+      "activity": [
+        { "event": "Invoice paid", "date": "2026-02-15T11:20:00Z", "detail": "Invoice #62740 - $400.00" },
+        { "event": "Invoice created", "date": "2026-02-14T00:00:00Z", "detail": "Payroll Processing" },
+        { "event": "Invoice paid", "date": "2026-02-03T09:45:00Z", "detail": "Invoice #62608 - $2,400.00" },
+        { "event": "Client created by Marcus Webb", "date": "2022-09-15T14:30:00Z" }
+      ],
+      "lastActivity": { "event": "Invoice paid", "date": "2026-02-15T11:20:00Z" },
+      "pricingModel": {
+        "currentModel": "mixed",
+        "components": [
+          { "service": "Bookkeeping - Monthly (3 Entities)", "type": "fixed_recurring", "monthlyValue": 2400 },
+          { "service": "Tax Return - Federal - 1065 x 3 + States", "type": "completion_billed", "annualValue": 7200 },
+          { "service": "Payroll Processing - Bi-weekly", "type": "fixed_recurring", "biweeklyValue": 400 },
+          { "service": "Sales Tax Filing - Monthly (3 States)", "type": "included_zero", "annualValue": 0, "estimatedMarketValue": 2400 }
+        ],
+        "annualBilledValue": 42000,
+        "estimatedUnbilledValue": 9600,
+        "hasCompletionBilled": true,
+        "hasUnpricedServices": true,
+        "unpricedAnnualLeakage": 2400
+      },
+      "fixedFeeReadiness": {
+        "score": 78,
+        "label": "Good Candidate",
+        "colour": "amber",
+        "rationale": "3+ year tenure with high-frequency billing (bi-weekly payroll + monthly bookkeeping + sales tax). Completion-billed tax return and unbilled sales tax compliance create uncertainty. Multi-entity hospitality is ideal for fixed fee consolidation.",
+        "estimatedCurrentAnnualValue": 42000,
+        "annualUncapturedValue": 9600,
+        "suggestedFixedFeeRange": { "low": 46800, "mid": 51600, "high": 56400 },
+        "suggestedUpliftPercent": 23,
+        "conversionRisk": "low",
+        "conversionRiskReason": "Hospitality clients value predictable costs given thin margins. Multi-entity complexity justifies consolidation."
+      },
+      "computed": {
+        "contractValue": 42000,
+        "revenueChange": 6.1,
+        "revenueDirection": "growing",
+        "paymentScore": 86,
+        "paymentScoreLabel": "Very Good",
+        "clientTenure": "3 years, 5 months",
+        "proposalEndingSoon": false,
+        "proposalExpired": false,
+        "daysUntilProposalExpiry": 224,
+        "hasPaymentMethodOnFile": true,
+        "paymentMethodExpiringSoon": false,
+        "hasFailedPayments": false,
+        "hasOutstandingInvoice": true,
+        "outstandingInvoiceAmount": 800,
+        "pendingManualBillValue": 7200
+      },
+      "flags": ["revenue_growing", "fixed_fee_ready", "multi_entity", "has_unpriced_services"],
+      "revenueOpportunity": {
+        "type": "fixed_fee_conversion_with_uncaptured_value",
+        "immediateRecovery": 800,
+        "annualUpliftIfConverted": 9600,
+        "totalOpportunityValue": 10400,
+        "urgency": "high",
+        "urgencyReason": "Multi-entity complexity with unbilled sales tax compliance worth $2,400/year. Consolidating to fixed fee captures this value and removes lumpy billing."
+      },
+      "confidenceEngine": {
+        "primaryAlert": "fixed_fee_ready",
+        "alertLabel": "Pricing Opportunity",
+        "alertColour": "purple",
+        "headline": "Raj manages 3 hospitality entities with complex compliance needs. Consolidating into a fixed fee removes billing friction and captures $2,400 in unbilled sales tax work.",
+        "justinKurnMaths": {
+          "averageAnnualBilledLast3Years": 41200,
+          "estimatedUnpricedDeliveredValue": 2400,
+          "pendingCompletionBill": 7200,
+          "suggestedFixedFee": 51600,
+          "upliftAmount": 9600,
+          "upliftPercent": 23,
+          "note": "Sales tax filing across 3 states is 15–20 hours/month of compliance work delivered at $0. Pricing it captures real value."
+        },
+        "peerProof": "\"Hospitality clients with multiple entities love fixed fee. They operate on thin margins and value cost predictability more than most industries.\" — Accounting firm partner, hospitality specialization",
+        "identityReframe": "Raj is juggling 3 entities, bi-weekly payroll, monthly bookkeeping, and tri-state sales tax compliance. A single consolidated fee simplifies his life and locks in your value.",
+        "outcomeAfterAction": "Once this proposal is sent, Raj gets one predictable monthly fee and you capture the sales tax work you're delivering. 23% uplift reflects the real complexity of multi-entity hospitality."
+      },
+      "recommendedAction": {
+        "action": "Draft fixed-fee renewal proposal",
+        "priority": "high",
+        "reasoning": "Multi-entity hospitality with bi-weekly payroll, monthly bookkeeping, and tri-state sales tax compliance. Revenue up 6.1%, payment score 86. Consolidate into $51,600 fixed fee to capture unbilled sales tax work ($2,400/year) and remove completion-billing uncertainty ($7,200 pending). Proposal renews in 7 months.",
+        "ignitionAction": "create_proposal",
+        "ignitionActionLabel": "Draft Fixed Fee Proposal",
+        "ignitionActionUrl": "/clients/cli_h8i9j0k1l2m3n4o5p6q7/proposals/new"
+      },
+      "availableActions": [
+        { "id": "create_proposal", "label": "Draft Fixed Fee Proposal", "destination": "/clients/cli_h8i9j0k1l2m3n4o5p6q7/proposals/new", "confidence_engine_primary": true },
+        { "id": "send_payment_reminder", "label": "Send Payment Reminder ($800)", "destination": "/payments/collections/reminders", "confidence_engine_primary": false },
+        { "id": "edit_client", "label": "Edit Client", "destination": "/clients/cli_h8i9j0k1l2m3n4o5p6q7/edit", "confidence_engine_primary": false },
+        { "id": "view_activity", "label": "View Activity Log", "destination": "/clients/cli_h8i9j0k1l2m3n4o5p6q7/activity", "confidence_engine_primary": false },
+        { "id": "plan_for_later", "label": "Plan for Later", "destination": null, "confidence_engine_primary": false },
+        { "id": "skip", "label": "Skip for Now", "destination": null, "confidence_engine_primary": false }
+      ],
+      "triageStatus": null
+    },
+    {
+      "id": "cli_c3d4e5f6g7h8i9j0k1l2",
+      "clientRef": "CLI-5103",
+      "name": "Sarah Whitmore",
+      "company": "Whitmore Creative Co.",
+      "status": "active",
+      "partner": { "name": "Ava Moretti", "email": "ava.moretti@pinnacle.cpa" },
+      "manager": { "name": "Rachel Osei", "email": "rachel.osei@pinnacle.cpa" },
+      "primaryContact": {
+        "name": "Sarah Whitmore",
+        "email": "sarah@whitmorecreative.com",
+        "phone": "+16175552847"
+      },
+      "tags": ["qboclass-a-moretti", "creative-agency"],
+      "createdDate": "2024-08-15",
+      "paymentMethods": [
+        {
+          "type": "card",
+          "brand": "Mastercard",
+          "last4": "3391",
+          "expiry": "09/27",
+          "cardType": "credit",
+          "status": "active"
+        }
+      ],
+      "cardFeePassthrough": true,
+      "connectedApps": {
+        "quickbooks": { "linked": true, "customerId": "21045" },
+        "proconnect": false
+      },
+      "proposals": {
+        "draft": 0,
+        "awaitingAcceptance": 0,
+        "accepted": 1,
+        "completed": 0,
+        "lost": 0,
+        "active": [
+          {
+            "proposalNumber": "PROP-31820",
+            "title": "Monthly Bookkeeping + Advisory",
+            "startDate": "2025-09-01",
+            "endDate": "2026-08-31",
+            "duration": "12 months",
+            "minimumValue": 38400,
+            "isRenewal": false,
+            "previousValue": null,
+            "renewalStatus": "not_due"
+          }
+        ]
+      },
+      "services": [
+        {
+          "name": "Bookkeeping - Monthly",
+          "category": "Outsourced Accounting",
+          "price": 1800,
+          "billingFrequency": "monthly",
+          "billingMode": "automatic",
+          "billingStatus": "active",
+          "startDate": "2025-09-01",
+          "priceType": "fixed"
+        },
+        {
+          "name": "Advisory Meeting - Monthly",
+          "category": "Advisory",
+          "price": 300,
+          "billingFrequency": "monthly",
+          "billingMode": "automatic",
+          "billingStatus": "active",
+          "startDate": "2025-09-01",
+          "priceType": "fixed"
+        },
+        {
+          "name": "Catch-up Bookkeeping - Quarterly",
+          "category": "Outsourced Accounting",
+          "price": 1100,
+          "billingFrequency": "quarterly",
+          "billingMode": "automatic",
+          "billingStatus": "active",
+          "startDate": "2025-09-01",
+          "priceType": "fixed"
+        }
+      ],
+      "activeServiceCount": 3,
+      "billingSchedule": {
+        "nextBill": {
+          "date": "2026-03-01",
+          "amount": 2100,
+          "serviceName": "Bookkeeping + Advisory",
+          "billingMode": "automatic"
+        },
+        "pendingManualBills": []
+      },
+      "invoices": {
+        "total": 14,
+        "paid": 14,
+        "unpaid": 0,
+        "failed": 0,
+        "voided": 0,
+        "totalBilled": 28700,
+        "outstandingAmount": 0,
+        "recent": [
+          { "invoiceNumber": "#62901", "date": "2026-02-01", "amount": 2100, "status": "paid" },
+          { "invoiceNumber": "#62244", "date": "2026-01-01", "amount": 2100, "status": "paid" },
+          { "invoiceNumber": "#61577", "date": "2025-12-01", "amount": 3200, "status": "paid" },
+          { "invoiceNumber": "#60912", "date": "2025-11-01", "amount": 2100, "status": "paid" },
+          { "invoiceNumber": "#60245", "date": "2025-10-01", "amount": 2100, "status": "paid" }
+        ]
+      },
+      "activity": [
+        { "event": "Invoice paid", "date": "2026-02-04T10:22:00Z", "detail": "Invoice #62901 - $2,100.00" },
+        { "event": "Proposal signed", "date": "2025-08-28T14:35:00Z", "detail": "PROP-31820 signed by Sarah Whitmore" },
+        { "event": "Invoice paid", "date": "2026-01-03T09:15:00Z", "detail": "Invoice #62244 - $2,100.00" },
+        { "event": "Client created by Ava Moretti", "date": "2024-08-15T11:20:00Z" }
+      ],
+      "lastActivity": { "event": "Invoice paid", "date": "2026-02-04T10:22:00Z" },
+      "pricingModel": {
+        "currentModel": "fixed_recurring",
+        "components": [
+          { "service": "Bookkeeping - Monthly", "type": "fixed_recurring", "monthlyValue": 1800 },
+          { "service": "Advisory Meeting - Monthly", "type": "fixed_recurring", "monthlyValue": 300 },
+          { "service": "Catch-up Bookkeeping - Quarterly", "type": "fixed_recurring", "quarterlyValue": 1100 }
+        ],
+        "annualBilledValue": 38400,
+        "estimatedUnbilledValue": 0,
+        "hasCompletionBilled": false,
+        "hasUnpricedServices": false,
+        "unpricedAnnualLeakage": 0
+      },
+      "fixedFeeReadiness": {
+        "score": 95,
+        "label": "Already Fixed Fee — Expand",
+        "colour": "green",
+        "rationale": "Perfect payment record across 14 invoices. Revenue grew 24% in 6 months. Clean fixed fee model already in place. The opportunity is expanding the advisory relationship as the business scales.",
+        "estimatedCurrentAnnualValue": 38400,
+        "annualUncapturedValue": 0,
+        "suggestedFixedFeeRange": { "low": 45600, "mid": 50400, "high": 55200 },
+        "suggestedUpliftPercent": 31,
+        "conversionRisk": "none",
+        "conversionRiskReason": "Already on fixed fee. High growth trajectory makes CAS expansion low-risk and high-return."
+      },
+      "computed": {
+        "contractValue": 38400,
+        "revenueChange": 24.0,
+        "revenueDirection": "growing",
+        "paymentScore": 98,
+        "paymentScoreLabel": "Excellent",
+        "clientTenure": "1 year, 6 months",
+        "proposalEndingSoon": false,
+        "proposalExpired": false,
+        "daysUntilProposalExpiry": 193,
+        "hasPaymentMethodOnFile": true,
+        "paymentMethodExpiringSoon": false,
+        "hasFailedPayments": false,
+        "hasOutstandingInvoice": false,
+        "outstandingInvoiceAmount": 0,
+        "pendingManualBillValue": 0
+      },
+      "flags": ["strong_growth", "upsell_ready", "fixed_fee_proof_point", "perfect_payment_record"],
+      "revenueOpportunity": {
+        "type": "cas_expansion",
+        "immediateRecovery": 0,
+        "annualUpliftIfConverted": 12000,
+        "totalOpportunityValue": 12000,
+        "urgency": "medium",
+        "urgencyReason": "Revenue growing 24% with perfect payment record. Ideal moment to propose expanded CAS services before next renewal."
+      },
+      "confidenceEngine": {
+        "primaryAlert": "upsell_ready",
+        "alertLabel": "Growth Opportunity",
+        "alertColour": "green",
+        "headline": "Sarah's revenue grew 24% in 6 months with a perfect payment record. She's growing into more complex needs.",
+        "justinKurnMaths": null,
+        "peerProof": "\"The clients who accept fixed fee fastest are usually the ones who grow fastest. They like the clarity.\" — Ava Moretti, Pinnacle Advisory Group",
+        "identityReframe": "Sarah is already your ideal fixed-fee client. Adding CAS or controller services here isn't a sell — it's a natural evolution of a trusted relationship.",
+        "outcomeAfterAction": "A CAS or controller add-on at this growth stage typically increases annual value by 25–35%. Send a proposal now while engagement momentum is high."
+      },
+      "recommendedAction": {
+        "action": "Propose expanded CAS services",
+        "priority": "medium",
+        "reasoning": "Revenue growing 24% with perfect payment history (98). 14 consecutive paid invoices. Client is 6 months into fixed fee engagement with strong momentum. Ideal moment for CAS or controller service upsell as business complexity increases. Could add $10K–$12K ARR.",
+        "ignitionAction": "create_proposal",
+        "ignitionActionLabel": "Draft CAS Expansion Proposal",
+        "ignitionActionUrl": "/clients/cli_c3d4e5f6g7h8i9j0k1l2/proposals/new"
+      },
+      "availableActions": [
+        { "id": "create_proposal", "label": "Draft CAS Expansion Proposal", "destination": "/clients/cli_c3d4e5f6g7h8i9j0k1l2/proposals/new", "confidence_engine_primary": true },
+        { "id": "create_deal", "label": "Create Deal in Pipeline", "destination": "/deals", "confidence_engine_primary": false },
+        { "id": "view_activity", "label": "View Activity Log", "destination": "/clients/cli_c3d4e5f6g7h8i9j0k1l2/activity", "confidence_engine_primary": false },
+        { "id": "plan_for_later", "label": "Plan for Later", "destination": null, "confidence_engine_primary": false },
+        { "id": "skip", "label": "Skip for Now", "destination": null, "confidence_engine_primary": false }
+      ],
+      "triageStatus": null
+    },
+    {
+      "id": "cli_f6g7h8i9j0k1l2m3n4o5",
+      "clientRef": "CLI-5102",
+      "name": "Marcus Chen",
+      "company": "Chen Technology Partners",
+      "status": "active",
+      "partner": { "name": "Jordan Blake", "email": "jordan.blake@pinnacle.cpa" },
+      "manager": { "name": "Rachel Osei", "email": "rachel.osei@pinnacle.cpa" },
+      "primaryContact": {
+        "name": "Marcus Chen",
+        "email": "marcus@chentechpartners.com",
+        "phone": "+14157778234"
+      },
+      "tags": ["qboclass-j-blake", "tech-consulting"],
+      "createdDate": "2023-11-20",
+      "paymentMethods": [
+        {
+          "type": "card",
+          "brand": "Amex",
+          "last4": "1009",
+          "expiry": "08/28",
+          "cardType": "corporate",
+          "status": "active"
+        }
+      ],
+      "cardFeePassthrough": true,
+      "connectedApps": {
+        "quickbooks": { "linked": true, "customerId": "19042" },
+        "proconnect": true
+      },
+      "proposals": {
+        "draft": 0,
+        "awaitingAcceptance": 0,
+        "accepted": 1,
+        "completed": 1,
+        "lost": 0,
+        "active": [
+          {
+            "proposalNumber": "PROP-29102",
+            "title": "S-Corp Tax & Bookkeeping",
+            "startDate": "2024-12-01",
+            "endDate": "2025-11-30",
+            "duration": "12 months",
+            "minimumValue": 18600,
+            "isRenewal": true,
+            "previousValue": 16800,
+            "renewalStatus": "not_yet_created"
+          }
+        ]
+      },
+      "services": [
+        {
+          "name": "Bookkeeping - Monthly",
+          "category": "Outsourced Accounting",
+          "price": 1200,
+          "billingFrequency": "monthly",
+          "billingMode": "automatic",
+          "billingStatus": "active",
+          "startDate": "2024-12-01",
+          "priceType": "fixed"
+        },
+        {
+          "name": "Tax Return - Federal - 1120S + 2 States",
+          "category": "Tax Preparation",
+          "price": 3000,
+          "billingFrequency": "on_completion",
+          "billingMode": "manual",
+          "billingStatus": "unbilled",
+          "startDate": "2024-12-01",
+          "priceType": "fixed",
+          "revenueRisk": "completion_billed_not_yet_triggered"
+        },
+        {
+          "name": "Tax Advisory - Quarterly Estimates",
+          "category": "Tax Advisory",
+          "price": 0,
+          "billingFrequency": "included",
+          "billingMode": "automatic",
+          "billingStatus": "active",
+          "startDate": "2024-12-01",
+          "priceType": "included",
+          "revenueRisk": "unpriced_delivered_service",
+          "marketRateEstimate": 600
+        }
+      ],
+      "activeServiceCount": 3,
+      "billingSchedule": {
+        "nextBill": {
+          "date": "2026-03-01",
+          "amount": 1200,
+          "serviceName": "Bookkeeping - Monthly",
+          "billingMode": "automatic"
+        },
+        "pendingManualBills": [
+          {
+            "serviceName": "Tax Return - Federal - 1120S + 2 States",
+            "amount": 3000,
+            "status": "unbilled",
+            "triggerCondition": "on_completion",
+            "revenueRisk": "$3,000 S-corp return not yet triggered. Completion billing creates manual touchpoint and revenue recognition delay."
+          }
+        ]
+      },
+      "invoices": {
+        "total": 16,
+        "paid": 15,
+        "unpaid": 1,
+        "failed": 0,
+        "voided": 0,
+        "totalBilled": 19800,
+        "outstandingAmount": 1200,
+        "recent": [
+          { "invoiceNumber": "#62801", "date": "2026-02-01", "amount": 1200, "status": "paid" },
+          { "invoiceNumber": "#62205", "date": "2026-01-01", "amount": 1200, "status": "unpaid", "daysOverdue": 49 },
+          { "invoiceNumber": "#61604", "date": "2025-12-01", "amount": 1200, "status": "paid" },
+          { "invoiceNumber": "#61002", "date": "2025-11-01", "amount": 1200, "status": "paid" },
+          { "invoiceNumber": "#60401", "date": "2025-10-01", "amount": 1200, "status": "paid" }
+        ]
+      },
+      "activity": [
+        { "event": "Invoice paid", "date": "2026-02-04T10:22:00Z", "detail": "Invoice #62801 - $1,200.00" },
+        { "event": "Invoice created", "date": "2026-02-01T00:00:00Z", "detail": "Bookkeeping - Monthly" },
+        { "event": "Invoice sent", "date": "2026-01-01T00:00:00Z", "detail": "Invoice #62205 - $1,200.00" },
+        { "event": "Client created by Jordan Blake", "date": "2023-11-20T09:30:00Z" }
+      ],
+      "lastActivity": { "event": "Invoice paid", "date": "2026-02-04T10:22:00Z" },
+      "pricingModel": {
+        "currentModel": "mixed",
+        "components": [
+          { "service": "Bookkeeping - Monthly", "type": "fixed_recurring", "monthlyValue": 1200 },
+          { "service": "Tax Return - Federal - 1120S + 2 States", "type": "completion_billed", "annualValue": 3000 },
+          { "service": "Tax Advisory - Quarterly Estimates", "type": "included_zero", "annualValue": 0, "estimatedMarketValue": 600 }
+        ],
+        "annualBilledValue": 18600,
+        "estimatedUnbilledValue": 3600,
+        "hasCompletionBilled": true,
+        "hasUnpricedServices": true,
+        "unpricedAnnualLeakage": 600
+      },
+      "fixedFeeReadiness": {
+        "score": 76,
+        "label": "Good Candidate",
+        "colour": "amber",
+        "rationale": "14-month tenure with strong payment history. Completion-billed tax return creates uncertainty. Revenue growing 11% — good moment to consolidate into fixed fee and capture unbilled tax advisory value.",
+        "estimatedCurrentAnnualValue": 18600,
+        "annualUncapturedValue": 3600,
+        "suggestedFixedFeeRange": { "low": 21600, "mid": 24000, "high": 26400 },
+        "suggestedUpliftPercent": 29,
+        "conversionRisk": "low",
+        "conversionRiskReason": "Tech consultants tend to value predictable pricing. Growing revenue makes this a natural conversation point."
+      },
+      "computed": {
+        "contractValue": 18600,
+        "revenueChange": 11.2,
+        "revenueDirection": "growing",
+        "paymentScore": 82,
+        "paymentScoreLabel": "Good",
+        "clientTenure": "2 years, 3 months",
+        "proposalEndingSoon": false,
+        "proposalExpired": false,
+        "daysUntilProposalExpiry": 284,
+        "hasPaymentMethodOnFile": true,
+        "paymentMethodExpiringSoon": false,
+        "hasFailedPayments": false,
+        "hasOutstandingInvoice": true,
+        "outstandingInvoiceAmount": 1200,
+        "pendingManualBillValue": 3000
+      },
+      "flags": ["revenue_growing", "fixed_fee_ready", "has_unpriced_services"],
+      "revenueOpportunity": {
+        "type": "fixed_fee_conversion_with_uncaptured_value",
+        "immediateRecovery": 1200,
+        "annualUpliftIfConverted": 5400,
+        "totalOpportunityValue": 6600,
+        "urgency": "medium",
+        "urgencyReason": "1 outstanding invoice, $3K completion bill pending, $600/year in unbilled tax advisory. Consolidating to fixed fee captures all of this."
+      },
+      "confidenceEngine": {
+        "primaryAlert": "fixed_fee_ready",
+        "alertLabel": "Pricing Opportunity",
+        "alertColour": "purple",
+        "headline": "Marcus has been growing steadily. Consolidate 3 services into a fixed fee that captures tax advisory value and removes billing uncertainty.",
+        "justinKurnMaths": {
+          "averageAnnualBilledLast3Years": 18600,
+          "estimatedUnpricedDeliveredValue": 600,
+          "pendingCompletionBill": 3000,
+          "suggestedFixedFee": 24000,
+          "upliftAmount": 5400,
+          "upliftPercent": 29,
+          "note": "Quarterly tax estimates are delivered but not billed. S-corp return completion billing creates manual revenue recognition. Fixed fee consolidates everything."
+        },
+        "peerProof": "\"Tech consulting clients value pricing transparency more than most industries. Fixed fee conversations land well here.\" — Accounting firm principal, similar client base",
+        "identityReframe": "Marcus runs a consulting business — he understands value-based pricing. This isn't a hard sell, it's a natural evolution.",
+        "outcomeAfterAction": "Once this proposal is sent, billing becomes predictable for Marcus and you capture the advisory value you're delivering. 29% uplift locks in the growth trajectory."
+      },
+      "recommendedAction": {
+        "action": "Draft fixed-fee renewal proposal",
+        "priority": "high",
+        "reasoning": "Revenue up 11.2% with strong payment history (82). Proposal renews in 9 months. Consolidate into a $24,000 fixed fee to capture unbilled tax advisory services ($600/year) and remove completion-billing uncertainty ($3,000 pending). Tech clients respond well to transparent pricing.",
+        "ignitionAction": "create_proposal",
+        "ignitionActionLabel": "Draft Fixed Fee Proposal",
+        "ignitionActionUrl": "/clients/cli_f6g7h8i9j0k1l2m3n4o5/proposals/new"
+      },
+      "availableActions": [
+        { "id": "create_proposal", "label": "Draft Fixed Fee Proposal", "destination": "/clients/cli_f6g7h8i9j0k1l2m3n4o5/proposals/new", "confidence_engine_primary": true },
+        { "id": "send_payment_reminder", "label": "Send Payment Reminder ($1,200)", "destination": "/payments/collections/reminders", "confidence_engine_primary": false },
+        { "id": "edit_client", "label": "Edit Client", "destination": "/clients/cli_f6g7h8i9j0k1l2m3n4o5/edit", "confidence_engine_primary": false },
+        { "id": "view_activity", "label": "View Activity Log", "destination": "/clients/cli_f6g7h8i9j0k1l2m3n4o5/activity", "confidence_engine_primary": false },
+        { "id": "plan_for_later", "label": "Plan for Later", "destination": null, "confidence_engine_primary": false },
+        { "id": "skip", "label": "Skip for Now", "destination": null, "confidence_engine_primary": false }
+      ],
+      "triageStatus": null
+    },
+    {
+      "id": "cli_j0k1l2m3n4o5p6q7r8s9",
+      "clientRef": "CLI-5921",
+      "name": "Ahmed Al-Rashid",
+      "company": "Al-Rashid Import/Export Co.",
+      "status": "active",
+      "partner": { "name": "Preethi Nair", "email": "preethi.nair@pinnacle.cpa" },
+      "manager": { "name": "Rachel Osei", "email": "rachel.osei@pinnacle.cpa" },
+      "primaryContact": {
+        "name": "Ahmed Al-Rashid",
+        "email": "ahmed@alrashidimport.com",
+        "phone": "+19175552904"
+      },
+      "tags": ["qboclass-p-nair", "import-export"],
+      "createdDate": "2023-06-10",
+      "paymentMethods": [
+        {
+          "type": "card",
+          "brand": "Mastercard",
+          "last4": "5502",
+          "expiry": "05/28",
+          "cardType": "business",
+          "status": "active"
+        }
+      ],
+      "cardFeePassthrough": true,
+      "connectedApps": {
+        "quickbooks": { "linked": true, "customerId": "16492" },
+        "proconnect": false
+      },
+      "proposals": {
+        "draft": 0,
+        "awaitingAcceptance": 0,
+        "accepted": 1,
+        "completed": 0,
+        "lost": 0,
+        "active": [
+          {
+            "proposalNumber": "PROP-28907",
+            "title": "Import/Export Accounting Package",
+            "startDate": "2025-07-01",
+            "endDate": "2026-06-30",
+            "duration": "12 months",
+            "minimumValue": 13200,
+            "isRenewal": true,
+            "previousValue": 12000,
+            "renewalStatus": "not_due"
+          }
+        ]
+      },
+      "services": [
+        {
+          "name": "Bookkeeping - Monthly",
+          "category": "Outsourced Accounting",
+          "price": 800,
+          "billingFrequency": "monthly",
+          "billingMode": "automatic",
+          "billingStatus": "active",
+          "startDate": "2025-07-01",
+          "priceType": "fixed"
+        },
+        {
+          "name": "Tax Return - Federal - 1120 + 1 State",
+          "category": "Tax Preparation",
+          "price": 1800,
+          "billingFrequency": "fixed_annual",
+          "billingMode": "automatic",
+          "billingStatus": "active",
+          "startDate": "2025-07-01",
+          "priceType": "fixed"
+        },
+        {
+          "name": "Sales Tax Compliance - Monthly",
+          "category": "Tax Compliance",
+          "price": 200,
+          "billingFrequency": "monthly",
+          "billingMode": "automatic",
+          "billingStatus": "active",
+          "startDate": "2025-07-01",
+          "priceType": "fixed"
+        }
+      ],
+      "activeServiceCount": 3,
+      "billingSchedule": {
+        "nextBill": {
+          "date": "2026-03-01",
+          "amount": 1000,
+          "serviceName": "Monthly Services",
+          "billingMode": "automatic"
+        },
+        "pendingManualBills": []
+      },
+      "invoices": {
+        "total": 20,
+        "paid": 20,
+        "unpaid": 0,
+        "failed": 0,
+        "voided": 0,
+        "totalBilled": 19600,
+        "outstandingAmount": 0,
+        "recent": [
+          { "invoiceNumber": "#62810", "date": "2026-02-01", "amount": 1000, "status": "paid" },
+          { "invoiceNumber": "#62215", "date": "2026-01-01", "amount": 1000, "status": "paid" },
+          { "invoiceNumber": "#61620", "date": "2025-12-01", "amount": 1000, "status": "paid" },
+          { "invoiceNumber": "#61025", "date": "2025-11-01", "amount": 1000, "status": "paid" },
+          { "invoiceNumber": "#60430", "date": "2025-10-01", "amount": 1000, "status": "paid" }
+        ]
+      },
+      "activity": [
+        { "event": "Invoice paid", "date": "2026-02-03T14:20:00Z", "detail": "Invoice #62810 - $1,000.00" },
+        { "event": "Invoice created", "date": "2026-02-01T00:00:00Z", "detail": "Monthly Services" },
+        { "event": "Proposal accepted", "date": "2025-06-25T10:15:00Z", "detail": "PROP-28907 - Import/Export Accounting Package" },
+        { "event": "Client created by Preethi Nair", "date": "2023-06-10T11:45:00Z" }
+      ],
+      "lastActivity": { "event": "Invoice paid", "date": "2026-02-03T14:20:00Z" },
+      "pricingModel": {
+        "currentModel": "fixed_recurring",
+        "components": [
+          { "service": "Bookkeeping - Monthly", "type": "fixed_recurring", "monthlyValue": 800 },
+          { "service": "Tax Return - Federal - 1120 + 1 State", "type": "fixed_annual", "annualValue": 1800 },
+          { "service": "Sales Tax Compliance - Monthly", "type": "fixed_recurring", "monthlyValue": 200 }
+        ],
+        "annualBilledValue": 13200,
+        "estimatedUnbilledValue": 0,
+        "hasCompletionBilled": false,
+        "hasUnpricedServices": false,
+        "unpricedAnnualLeakage": 0
+      },
+      "fixedFeeReadiness": {
+        "score": 90,
+        "label": "Already Fixed Fee — Maintain",
+        "colour": "green",
+        "rationale": "Successfully converted to fixed fee in July 2025. 20 consecutive paid invoices, 10% uplift on last renewal. Relationship is stable — focus is on maintaining momentum.",
+        "estimatedCurrentAnnualValue": 13200,
+        "annualUncapturedValue": 0,
+        "suggestedFixedFeeRange": { "low": 13200, "mid": 14400, "high": 15600 },
+        "suggestedUpliftPercent": 9,
+        "conversionRisk": "none",
+        "conversionRiskReason": "Already converted and renewed once. Perfect payment record. No immediate action needed — relationship is healthy."
+      },
+      "computed": {
+        "contractValue": 13200,
+        "revenueChange": 10.0,
+        "revenueDirection": "growing",
+        "paymentScore": 94,
+        "paymentScoreLabel": "Excellent",
+        "clientTenure": "2 years, 8 months",
+        "proposalEndingSoon": false,
+        "proposalExpired": false,
+        "daysUntilProposalExpiry": 132,
+        "hasPaymentMethodOnFile": true,
+        "paymentMethodExpiringSoon": false,
+        "hasFailedPayments": false,
+        "hasOutstandingInvoice": false,
+        "outstandingInvoiceAmount": 0,
+        "pendingManualBillValue": 0
+      },
+      "flags": ["fixed_fee_proof_point", "recent_renewal_success"],
+      "revenueOpportunity": {
+        "type": "relationship_maintenance",
+        "immediateRecovery": 0,
+        "annualUpliftIfConverted": 0,
+        "totalOpportunityValue": 0,
+        "urgency": "low",
+        "urgencyReason": "Recent successful renewal with 10% uplift. Focus is on maintaining strong relationship through mid-year check-in."
+      },
+      "confidenceEngine": {
+        "primaryAlert": "maintain_momentum",
+        "alertLabel": "On Track",
+        "alertColour": "green",
+        "headline": "Ahmed successfully renewed his fixed-fee proposal in July 2025 with a 10% uplift. 20 consecutive paid invoices — relationship is healthy and on track.",
+        "justinKurnMaths": null,
+        "peerProof": "\"The best time to check in with a client is right after a successful renewal. It reinforces the value they're getting and surfaces potential expansion opportunities early.\" — Client success best practice",
+        "identityReframe": "Ahmed's renewal went smoothly and he's paying on time every month. A quick check-in now reinforces that you're engaged and proactive.",
+        "outcomeAfterAction": "A brief check-in call 8 months into a renewed fixed-fee engagement reinforces the relationship and surfaces any scope changes early, before they become friction points."
+      },
+      "recommendedAction": {
+        "action": "Schedule mid-year check-in",
+        "priority": "low",
+        "reasoning": "Recent successful fixed-fee renewal (July 2025) with 10% uplift. Perfect payment record (94), 20 consecutive paid invoices. Proposal renews in 4 months. Mid-year check-in reinforces relationship and surfaces potential scope adjustments before next renewal cycle.",
+        "ignitionAction": "schedule_meeting",
+        "ignitionActionLabel": "Schedule Check-In",
+        "ignitionActionUrl": "/clients/cli_j0k1l2m3n4o5p6q7r8s9/meetings"
+      },
+      "availableActions": [
+        { "id": "schedule_meeting", "label": "Schedule Check-In", "destination": "/clients/cli_j0k1l2m3n4o5p6q7r8s9/meetings", "confidence_engine_primary": true },
+        { "id": "view_activity", "label": "View Activity Log", "destination": "/clients/cli_j0k1l2m3n4o5p6q7r8s9/activity", "confidence_engine_primary": false },
+        { "id": "plan_for_later", "label": "Plan for Later", "destination": null, "confidence_engine_primary": false },
+        { "id": "skip", "label": "Skip for Now", "destination": null, "confidence_engine_primary": false }
+      ],
+      "triageStatus": null
+    },
+    {
+      "id": "cli_b2c3d4e5f6g7h8i9j0k1",
+      "clientRef": "CLI-3872",
+      "name": "Tom Radcliffe",
+      "company": "Radcliffe Property Group",
+      "status": "at_risk",
+      "partner": { "name": "Daniel Tran", "email": "daniel.tran@pinnacle.cpa" },
+      "manager": { "name": "Pinnacle Admin", "email": "admin@pinnacle.cpa" },
+      "primaryContact": {
+        "name": "Tom Radcliffe",
+        "email": "tom@radcliffeproperty.com",
+        "phone": "+13075551200"
+      },
+      "tags": ["qboclass-d-tran", "real-estate"],
+      "createdDate": "2022-06-01",
+      "paymentMethods": [
+        {
+          "type": "bank_account",
+          "last4": "6742",
+          "accountHolder": "Tom Radcliffe",
+          "status": "active",
+          "verificationStatus": "verified"
+        }
+      ],
+      "cardFeePassthrough": false,
+      "connectedApps": {
+        "quickbooks": { "linked": true, "customerId": "10234" },
+        "proconnect": true
+      },
+      "proposals": {
+        "draft": 0,
+        "awaitingAcceptance": 0,
+        "accepted": 1,
+        "completed": 2,
+        "lost": 0,
+        "active": [
+          {
+            "proposalNumber": "PROP-26890",
+            "title": "Business Tax & Advisory",
+            "startDate": "2025-01-15",
+            "endDate": "2026-01-14",
+            "duration": "12 months",
+            "minimumValue": 8400,
+            "isRenewal": true,
+            "previousValue": 7800,
+            "renewalStatus": "overdue",
+            "daysOverdueForRenewal": 36
+          }
+        ]
+      },
+      "services": [
+        {
+          "name": "Tax Return - Federal - 1065 + 1 State",
+          "category": "Tax Preparation",
+          "price": 2200,
+          "billingFrequency": "on_completion",
+          "billingMode": "manual",
+          "billingStatus": "billed",
+          "startDate": "2025-01-15",
+          "priceType": "fixed",
+          "revenueRisk": "completion_billed_now_overdue"
+        },
+        {
+          "name": "Bookkeeping - Monthly",
+          "category": "Outsourced Accounting",
+          "price": 500,
+          "billingFrequency": "monthly",
+          "billingMode": "automatic",
+          "billingStatus": "active",
+          "startDate": "2025-01-15",
+          "priceType": "fixed"
+        },
+        {
+          "name": "Tax Advisory - Quarterly Safe Harbor Tax Estimates",
+          "category": "Tax Advisory",
+          "price": 0,
+          "billingFrequency": "included",
+          "billingMode": "automatic",
+          "billingStatus": "active",
+          "startDate": "2025-01-15",
+          "priceType": "included",
+          "revenueRisk": "unpriced_delivered_service",
+          "marketRateEstimate": 900
+        },
+        {
+          "name": "Tax Resolution - Tax Protection Plus $1M Audit Defense",
+          "category": "Tax Resolution",
+          "price": 0,
+          "billingFrequency": "included",
+          "billingMode": "automatic",
+          "billingStatus": "active",
+          "startDate": "2025-01-15",
+          "priceType": "included",
+          "revenueRisk": "unpriced_delivered_service",
+          "marketRateEstimate": 480
+        }
+      ],
+      "activeServiceCount": 4,
+      "billingSchedule": {
+        "nextBill": {
+          "date": "2026-03-01",
+          "amount": 500,
+          "serviceName": "Bookkeeping - Monthly",
+          "billingMode": "automatic"
+        },
+        "pendingManualBills": []
+      },
+      "invoices": {
+        "total": 18,
+        "paid": 15,
+        "unpaid": 2,
+        "failed": 1,
+        "voided": 0,
+        "totalBilled": 7900,
+        "outstandingAmount": 2700,
+        "recent": [
+          { "invoiceNumber": "#62555", "date": "2026-02-01", "amount": 500, "status": "unpaid", "daysOverdue": 18 },
+          { "invoiceNumber": "#62554", "date": "2026-02-01", "amount": 2200, "status": "unpaid", "daysOverdue": 18 },
+          { "invoiceNumber": "#61920", "date": "2026-01-01", "amount": 500, "status": "paid" },
+          { "invoiceNumber": "#61300", "date": "2025-12-01", "amount": 500, "status": "paid" },
+          { "invoiceNumber": "#60810", "date": "2025-11-01", "amount": 500, "status": "failed", "failedDate": "2025-11-03", "failureReason": "bank_account_rejected" }
+        ]
+      },
+      "activity": [
+        { "event": "Invoice created", "date": "2026-02-01T00:00:00Z", "detail": "Tax Return - Federal - 1065 - $2,200.00" },
+        { "event": "Invoice created", "date": "2026-02-01T00:00:00Z", "detail": "Bookkeeping - Monthly - $500.00" },
+        { "event": "Invoice paid", "date": "2026-01-04T11:30:00Z", "detail": "Invoice #61920 - $500.00" },
+        { "event": "Payment failed", "date": "2025-11-03T16:00:00Z", "detail": "Invoice #60810 - bank account rejected" },
+        { "event": "Client created by Daniel Tran", "date": "2022-06-01T09:00:00Z" }
+      ],
+      "lastActivity": { "event": "Invoice created", "date": "2026-02-01T00:00:00Z" },
+      "pricingModel": {
+        "currentModel": "mixed",
+        "components": [
+          { "service": "Tax Return - Federal - 1065 + 1 State", "type": "completion_billed", "annualValue": 2200 },
+          { "service": "Bookkeeping - Monthly", "type": "fixed_recurring", "monthlyValue": 500 },
+          { "service": "Tax Advisory - Quarterly Safe Harbor", "type": "included_zero", "annualValue": 0, "estimatedMarketValue": 900 },
+          { "service": "Tax Resolution - Audit Defense", "type": "included_zero", "annualValue": 0, "estimatedMarketValue": 480 }
+        ],
+        "annualBilledValue": 8400,
+        "estimatedUnbilledValue": 3580,
+        "hasCompletionBilled": true,
+        "hasUnpricedServices": true,
+        "unpricedAnnualLeakage": 1380
+      },
+      "fixedFeeReadiness": {
+        "score": 58,
+        "label": "Resolve First, Then Convert",
+        "colour": "amber",
+        "rationale": "3 years 8 months tenure with growing revenue (+7.7%). Proposal expired 36 days ago with no renewal created — the engagement is technically operating without a contract. $2,700 in outstanding invoices. Fix the payment and create a renewal proposal with fixed fee consolidation.",
+        "estimatedCurrentAnnualValue": 8400,
+        "annualUncapturedValue": 3580,
+        "suggestedFixedFeeRange": { "low": 10800, "mid": 12000, "high": 13200 },
+        "suggestedUpliftPercent": 43,
+        "conversionRisk": "medium",
+        "conversionRiskReason": "Currently operating without an active contract. Payment behaviour shows 1 prior bank rejection. The growing revenue signals the relationship is strong — act now before a billing failure creates friction."
+      },
+      "computed": {
+        "contractValue": 8400,
+        "revenueChange": 7.7,
+        "revenueDirection": "growing",
+        "paymentScore": 62,
+        "paymentScoreLabel": "Fair",
+        "clientTenure": "3 years, 8 months",
+        "proposalEndingSoon": false,
+        "proposalExpired": true,
+        "daysProposalExpired": 36,
+        "hasPaymentMethodOnFile": true,
+        "paymentMethodExpiringSoon": false,
+        "hasFailedPayments": true,
+        "hasOutstandingInvoice": true,
+        "outstandingInvoiceAmount": 2700,
+        "pendingManualBillValue": 0
+      },
+      "flags": [
+        "proposal_expired",
+        "no_active_contract",
+        "has_outstanding_invoice",
+        "overdue_payment",
+        "failed_payment",
+        "has_unpriced_services",
+        "fixed_fee_opportunity"
+      ],
+      "revenueOpportunity": {
+        "type": "expired_contract_plus_overdue_plus_repricing",
+        "immediateRecovery": 2700,
+        "annualUpliftIfConverted": 3600,
+        "totalOpportunityValue": 6300,
+        "urgency": "urgent",
+        "urgencyReason": "No active contract for 36 days. $2,700 overdue including completion-billed tax return. Operating without contract protection is legal and revenue risk."
+      },
+      "confidenceEngine": {
+        "primaryAlert": "no_active_contract",
+        "alertLabel": "No Active Contract — Act Now",
+        "alertColour": "orange",
+        "headline": "Tom's proposal expired 36 days ago. You're delivering services with no contract in place and $2,700 outstanding.",
+        "justinKurnMaths": {
+          "averageAnnualBilledLast3Years": 8033,
+          "estimatedUnpricedDeliveredValue": 1380,
+          "outstandingAmount": 2700,
+          "suggestedFixedFee": 12000,
+          "upliftAmount": 3600,
+          "upliftPercent": 43,
+          "note": "Quarterly safe harbor estimates and audit defense are already being delivered at $0. Tom's business is growing — he can absorb a repriced engagement and will likely welcome the clarity over lumpy billing."
+        },
+        "peerProof": "\"The completion-billed tax return is the biggest source of client billing surprises. Fixed fee removes it for both sides.\" — Firm principal, 3-year fixed fee practitioner (Ignition platform data, anonymised)",
+        "identityReframe": "Tom's revenue is up 7.7%. His business is growing. A growing client without an active contract is your biggest risk — and your biggest repricing opportunity.",
+        "outcomeAfterAction": "Creating a new fixed fee proposal closes the contract gap, consolidates the outstanding amount, and locks in predictable monthly billing — ending the lumpy completion-billing cycle."
+      },
+      "recommendedAction": {
+        "action": "Create renewal proposal with fixed fee consolidation — urgent",
+        "priority": "urgent",
+        "reasoning": "Proposal expired 36 days ago. $2,700 outstanding (incl. $2,200 completion-billed tax return). 1 prior failed payment. Delivering services with no contract is a legal and revenue risk. Create a fixed fee renewal at $12,000 that consolidates all 4 services, addresses the outstanding amount, and locks in automatic monthly billing.",
+        "ignitionAction": "create_proposal",
+        "ignitionActionLabel": "Create Fixed Fee Renewal",
+        "ignitionActionUrl": "/clients/cli_b2c3d4e5f6g7h8i9j0k1/proposals/new"
+      },
+      "availableActions": [
+        { "id": "create_proposal", "label": "Create Fixed Fee Renewal", "destination": "/clients/cli_b2c3d4e5f6g7h8i9j0k1/proposals/new", "confidence_engine_primary": true },
+        { "id": "send_payment_reminder", "label": "Send Payment Reminder ($2,700)", "destination": "/payments/collections/outstanding", "confidence_engine_primary": true },
+        { "id": "request_payment_method", "label": "Request Bank Account Re-verification", "destination": "/clients/cli_b2c3d4e5f6g7h8i9j0k1/summary", "confidence_engine_primary": false },
+        { "id": "view_activity", "label": "View Activity Log", "destination": "/clients/cli_b2c3d4e5f6g7h8i9j0k1/activity", "confidence_engine_primary": false },
+        { "id": "plan_for_later", "label": "Plan for Later", "destination": null, "confidence_engine_primary": false },
+        { "id": "skip", "label": "Skip for Now", "destination": null, "confidence_engine_primary": false }
+      ],
+      "triageStatus": null
+    },
+    {
+      "id": "cli_a1b2c3d4e5f6g7h8i9j0",
+      "clientRef": "CLI-4201",
+      "name": "Priya Kapoor",
+      "company": "Kapoor Health & Wellness",
+      "status": "active",
+      "partner": { "name": "Marcus Webb", "email": "marcus.webb@pinnacle.cpa" },
+      "manager": { "name": "Rachel Osei", "email": "rachel.osei@pinnacle.cpa" },
+      "primaryContact": {
+        "name": "Priya Kapoor",
+        "email": "priya@kapoorhealth.com",
+        "phone": "+14155529832"
+      },
+      "tags": ["qboclass-m-webb", "health-wellness"],
+      "createdDate": "2023-03-14",
+      "paymentMethods": [
+        {
+          "type": "card",
+          "brand": "Visa",
+          "last4": "4821",
+          "expiry": "11/27",
+          "cardType": "credit",
+          "status": "active"
+        }
+      ],
+      "cardFeePassthrough": true,
+      "connectedApps": {
+        "quickbooks": { "linked": true, "customerId": "14892" },
+        "proconnect": false
+      },
+      "proposals": {
+        "draft": 0,
+        "awaitingAcceptance": 0,
+        "accepted": 1,
+        "completed": 1,
+        "lost": 0,
+        "active": [
+          {
+            "proposalNumber": "PROP-28410",
+            "title": "Monthly Bookkeeping & Tax Prep",
+            "startDate": "2025-04-01",
+            "endDate": "2026-03-31",
+            "duration": "12 months",
+            "minimumValue": 5700,
+            "isRenewal": true,
+            "previousValue": 6200,
+            "renewalStatus": "not_yet_created"
+          }
+        ]
+      },
+      "services": [
+        {
+          "name": "Bookkeeping - Monthly",
+          "category": "Outsourced Accounting",
+          "price": 350,
+          "billingFrequency": "monthly",
+          "billingMode": "automatic",
+          "billingStatus": "active",
+          "startDate": "2025-04-01",
+          "priceType": "fixed"
+        },
+        {
+          "name": "Tax Return - Federal - 1040 + 1 State",
+          "category": "Tax Preparation",
+          "price": 1500,
+          "billingFrequency": "on_completion",
+          "billingMode": "manual",
+          "billingStatus": "unbilled",
+          "startDate": "2025-04-01",
+          "priceType": "fixed",
+          "revenueRisk": "completion_billed_not_yet_triggered"
+        },
+        {
+          "name": "Administration - Document and File Management",
+          "category": "Administration",
+          "price": 0,
+          "billingFrequency": "included",
+          "billingMode": "automatic",
+          "billingStatus": "active",
+          "startDate": "2025-04-01",
+          "priceType": "included",
+          "revenueRisk": "unpriced_delivered_service",
+          "marketRateEstimate": 600
+        },
+        {
+          "name": "Tax Resolution - Tax Protection Plus $1M Audit Defense",
+          "category": "Tax Resolution",
+          "price": 0,
+          "billingFrequency": "included",
+          "billingMode": "automatic",
+          "billingStatus": "active",
+          "startDate": "2025-04-01",
+          "priceType": "included",
+          "revenueRisk": "unpriced_delivered_service",
+          "marketRateEstimate": 480
+        }
+      ],
+      "activeServiceCount": 4,
+      "billingSchedule": {
+        "nextBill": {
+          "date": "2026-03-01",
+          "amount": 350,
+          "serviceName": "Bookkeeping - Monthly",
+          "billingMode": "automatic"
+        },
+        "pendingManualBills": [
+          {
+            "serviceName": "Tax Return - Federal - 1040 + 1 State",
+            "amount": 1500,
+            "status": "unbilled",
+            "triggerCondition": "on_completion",
+            "revenueRisk": "Revenue recognised only when manually triggered — at risk of being delayed or forgotten"
+          }
+        ]
+      },
+      "invoices": {
+        "total": 11,
+        "paid": 10,
+        "unpaid": 1,
+        "failed": 0,
+        "voided": 0,
+        "totalBilled": 5200,
+        "outstandingAmount": 350,
+        "recent": [
+          { "invoiceNumber": "#62401", "date": "2026-02-01", "amount": 350, "status": "paid" },
+          { "invoiceNumber": "#61890", "date": "2026-01-01", "amount": 350, "status": "unpaid", "daysOverdue": 49 },
+          { "invoiceNumber": "#61205", "date": "2025-12-01", "amount": 350, "status": "paid" },
+          { "invoiceNumber": "#60780", "date": "2025-11-01", "amount": 350, "status": "paid" },
+          { "invoiceNumber": "#60102", "date": "2025-10-01", "amount": 350, "status": "paid" }
+        ]
+      },
+      "activity": [
+        { "event": "Invoice paid", "date": "2026-02-03T09:14:00Z", "detail": "Invoice #62401 - $350.00" },
+        { "event": "Invoice created", "date": "2026-02-01T00:00:00Z", "detail": "Bookkeeping - Monthly" },
+        { "event": "Invoice sent", "date": "2026-01-01T00:00:00Z", "detail": "Invoice #61890 - $350.00" },
+        { "event": "Client edited by Marcus Webb", "date": "2025-09-15T10:30:00Z", "detail": "Manager: Marcus Webb → Rachel Osei" },
+        { "event": "Status changed to Active by System", "date": "2025-04-01T08:00:00Z" },
+        { "event": "Client created by Marcus Webb", "date": "2023-03-14T11:20:00Z" }
+      ],
+      "lastActivity": { "event": "Invoice paid", "date": "2026-02-03T09:14:00Z" },
+      "pricingModel": {
+        "currentModel": "mixed",
+        "components": [
+          { "service": "Bookkeeping - Monthly", "type": "fixed_recurring", "monthlyValue": 350 },
+          { "service": "Tax Return - Federal - 1040 + 1 State", "type": "completion_billed", "annualValue": 1500 },
+          { "service": "Administration - Document and File Management", "type": "included_zero", "annualValue": 0, "estimatedMarketValue": 600 },
+          { "service": "Tax Resolution - Audit Defense", "type": "included_zero", "annualValue": 0, "estimatedMarketValue": 480 }
+        ],
+        "annualBilledValue": 5700,
+        "estimatedUnbilledValue": 2580,
+        "hasCompletionBilled": true,
+        "hasUnpricedServices": true,
+        "unpricedAnnualLeakage": 1080
+      },
+      "fixedFeeReadiness": {
+        "score": 74,
+        "label": "Good Candidate",
+        "colour": "amber",
+        "rationale": "2 years 11 months tenure. Payment score 88 (Very Good). Proposal expires in 30 days — natural renewal window. Two $0-priced services represent $1,080/year in delivered but uncaptured value. Completion-billed tax return means revenue recognition is delayed and manual. Consolidating to fixed fee locks in predictable billing and captures the gap.",
+        "estimatedCurrentAnnualValue": 5700,
+        "annualUncapturedValue": 2580,
+        "suggestedFixedFeeRange": { "low": 7200, "mid": 8100, "high": 8700 },
+        "suggestedUpliftPercent": 42,
+        "conversionRisk": "low",
+        "conversionRiskReason": "Long tenure, reliable payer, Visa on file valid until 2027. Proposal ending soon makes this the natural moment to reprice."
+      },
+      "computed": {
+        "contractValue": 5700,
+        "revenueChange": -8.1,
+        "revenueDirection": "declining",
+        "paymentScore": 88,
+        "paymentScoreLabel": "Very Good",
+        "clientTenure": "2 years, 11 months",
+        "proposalEndingSoon": true,
+        "proposalExpired": false,
+        "daysUntilProposalExpiry": 30,
+        "hasPaymentMethodOnFile": true,
+        "paymentMethodExpiringSoon": false,
+        "hasFailedPayments": false,
+        "hasOutstandingInvoice": true,
+        "outstandingInvoiceAmount": 350,
+        "pendingManualBillValue": 1500
+      },
+      "flags": [
+        "revenue_declining",
+        "has_outstanding_invoice",
+        "proposal_ending_soon",
+        "has_unpriced_services",
+        "completion_billed_tax_return_pending",
+        "fixed_fee_ready"
+      ],
+      "revenueOpportunity": {
+        "type": "fixed_fee_conversion_at_renewal",
+        "immediateRecovery": 350,
+        "annualUpliftIfConverted": 2400,
+        "totalOpportunityValue": 2750,
+        "urgency": "high",
+        "urgencyReason": "Proposal expires in 30 days. Without a renewal, this client rolls to month-to-month with no contract protection. $1,080/year in unbilled services."
+      },
+      "confidenceEngine": {
+        "primaryAlert": "fixed_fee_ready",
+        "alertLabel": "Renewal + Pricing Opportunity",
+        "alertColour": "purple",
+        "headline": "Priya's proposal expires in 30 days and you're delivering $1,080/year in services you're not billing for.",
+        "justinKurnMaths": {
+          "averageAnnualBilledLast3Years": 5967,
+          "estimatedUnpricedDeliveredValue": 1080,
+          "pendingCompletionBill": 1500,
+          "suggestedFixedFee": 8100,
+          "upliftAmount": 2400,
+          "upliftPercent": 42,
+          "note": "Admin & Audit Defense are already in scope. Pricing them in isn't a charge increase — it's just making the engagement transparent."
+        },
+        "peerProof": "\"Everyone eats hours. Once you price what you're actually delivering, clients don't push back — they respect the clarity.\" — Firm principal, Ignition platform data (anonymised)",
+        "identityReframe": "The renewal window is your permission slip to reprice. You don't need to justify it — the proposal lapsing is the natural moment.",
+        "outcomeAfterAction": "A fixed fee renewal proposal drafted in Ignition auto-bills monthly, sends the tax return fee on a fixed schedule, and triggers renewal 90 days before expiry — no more manual chasing."
+      },
+      "recommendedAction": {
+        "action": "Draft fixed-fee renewal proposal before expiry",
+        "priority": "high",
+        "reasoning": "Proposal expires in 30 days. 1 outstanding invoice ($350). Tax return completion bill ($1,500) still unbilled. 2 unpriced services leaking $1,080/year. Fixed fee at $8,100 captures all of this and prevents a lapse into month-to-month. Revenue declining 8.1% makes repricing critical.",
+        "ignitionAction": "create_proposal",
+        "ignitionActionLabel": "Draft Renewal Proposal",
+        "ignitionActionUrl": "/clients/cli_a1b2c3d4e5f6g7h8i9j0/proposals/new"
+      },
+      "availableActions": [
+        { "id": "create_proposal", "label": "Draft Fixed Fee Renewal", "destination": "/clients/cli_a1b2c3d4e5f6g7h8i9j0/proposals/new", "confidence_engine_primary": true },
+        { "id": "resend_proposal", "label": "Resend Current Proposal", "destination": "/clients/cli_a1b2c3d4e5f6g7h8i9j0/proposals/prop_28410", "confidence_engine_primary": false },
+        { "id": "send_payment_reminder", "label": "Send Payment Reminder ($350)", "destination": "/payments/collections/outstanding", "confidence_engine_primary": false },
+        { "id": "edit_client", "label": "Edit Client", "destination": "/clients/cli_a1b2c3d4e5f6g7h8i9j0/edit", "confidence_engine_primary": false },
+        { "id": "view_activity", "label": "View Activity Log", "destination": "/clients/cli_a1b2c3d4e5f6g7h8i9j0/activity", "confidence_engine_primary": false },
+        { "id": "plan_for_later", "label": "Plan for Later", "destination": null, "confidence_engine_primary": false },
+        { "id": "skip", "label": "Skip for Now", "destination": null, "confidence_engine_primary": false }
+      ],
+      "triageStatus": null
+    }
+  ]
+}
