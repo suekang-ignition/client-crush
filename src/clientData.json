@@ -226,16 +226,15 @@
         "outcomeAfterAction": "A quarterly review call with a $132K client typically surfaces expansion opportunities or reinforces loyalty. At this scale, retention is more valuable than acquisition."
       },
       "recommendedAction": {
-        "action": "Schedule quarterly strategic review",
+        "action": "Create expansion opportunity",
         "priority": "medium",
-        "reasoning": "Flagship client, 142 consecutive payments, $132K ARR, fractional CFO relationship. Perfect payment history (98). Proactive quarterly review reinforces strategic partnership and surfaces potential scope expansion. Retention at this scale is critical.",
-        "ignitionAction": "schedule_meeting",
-        "ignitionActionLabel": "Schedule Strategic Review",
-        "ignitionActionUrl": "/clients/cli_i9j0k1l2m3n4o5p6q7r8/meetings"
+        "reasoning": "Flagship client, 142 consecutive payments, $132K ARR, fractional CFO relationship. Perfect payment history (98). Creating an expansion opportunity surfaces potential scope growth and reinforces strategic partnership. Retention at this scale is critical.",
+        "ignitionAction": "create_deal",
+        "ignitionActionLabel": "Create Expansion Opportunity",
+        "ignitionActionUrl": "/deals"
       },
       "availableActions": [
-        { "id": "schedule_meeting", "label": "Schedule Strategic Review", "destination": "/clients/cli_i9j0k1l2m3n4o5p6q7r8/meetings", "confidence_engine_primary": true },
-        { "id": "create_deal", "label": "Create Expansion Opportunity", "destination": "/deals", "confidence_engine_primary": false },
+        { "id": "send_proposal", "label": "Propose Services", "destination": "/proposals/new", "confidence_engine_primary": true },
         { "id": "view_activity", "label": "View Activity Log", "destination": "/clients/cli_i9j0k1l2m3n4o5p6q7r8/activity", "confidence_engine_primary": false },
         { "id": "plan_for_later", "label": "Plan for Later", "destination": null, "confidence_engine_primary": false },
         { "id": "skip", "label": "Skip for Now", "destination": null, "confidence_engine_primary": false }
@@ -432,12 +431,11 @@
         "priority": "medium",
         "reasoning": "Perfect payment record (95), 52 consecutive paid invoices, $74K ARR, manufacturing complexity. Ideal candidate for fractional CFO expansion given multi-entity structure and existing financial reporting relationship. Could add $20K–$25K ARR.",
         "ignitionAction": "create_proposal",
-        "ignitionActionLabel": "Draft CFO Services Proposal",
+        "ignitionActionLabel": "Propose Services",
         "ignitionActionUrl": "/clients/cli_g7h8i9j0k1l2m3n4o5p6/proposals/new"
       },
       "availableActions": [
-        { "id": "create_proposal", "label": "Draft CFO Services Proposal", "destination": "/clients/cli_g7h8i9j0k1l2m3n4o5p6/proposals/new", "confidence_engine_primary": true },
-        { "id": "create_deal", "label": "Create Strategic Expansion Deal", "destination": "/deals", "confidence_engine_primary": false },
+        { "id": "create_proposal", "label": "Propose Services", "destination": "/clients/cli_g7h8i9j0k1l2m3n4o5p6/proposals/new", "confidence_engine_primary": true },
         { "id": "view_activity", "label": "View Activity Log", "destination": "/clients/cli_g7h8i9j0k1l2m3n4o5p6/activity", "confidence_engine_primary": false },
         { "id": "plan_for_later", "label": "Plan for Later", "destination": null, "confidence_engine_primary": false },
         { "id": "skip", "label": "Skip for Now", "destination": null, "confidence_engine_primary": false }
@@ -865,11 +863,11 @@
         "priority": "high",
         "reasoning": "Multi-entity hospitality with bi-weekly payroll, monthly bookkeeping, and tri-state sales tax compliance. Revenue up 6.1%, payment score 86. Consolidate into $51,600 fixed fee to capture unbilled sales tax work ($2,400/year) and remove completion-billing uncertainty ($7,200 pending). Proposal renews in 7 months.",
         "ignitionAction": "create_proposal",
-        "ignitionActionLabel": "Draft Fixed Fee Proposal",
+        "ignitionActionLabel": "Propose Services",
         "ignitionActionUrl": "/clients/cli_h8i9j0k1l2m3n4o5p6q7/proposals/new"
       },
       "availableActions": [
-        { "id": "create_proposal", "label": "Draft Fixed Fee Proposal", "destination": "/clients/cli_h8i9j0k1l2m3n4o5p6q7/proposals/new", "confidence_engine_primary": true },
+        { "id": "create_proposal", "label": "Propose Services", "destination": "/clients/cli_h8i9j0k1l2m3n4o5p6q7/proposals/new", "confidence_engine_primary": true },
         { "id": "send_payment_reminder", "label": "Send Payment Reminder ($800)", "destination": "/payments/collections/reminders", "confidence_engine_primary": false },
         { "id": "edit_client", "label": "Edit Client", "destination": "/clients/cli_h8i9j0k1l2m3n4o5p6q7/edit", "confidence_engine_primary": false },
         { "id": "view_activity", "label": "View Activity Log", "destination": "/clients/cli_h8i9j0k1l2m3n4o5p6q7/activity", "confidence_engine_primary": false },
@@ -1059,12 +1057,11 @@
         "priority": "medium",
         "reasoning": "Revenue growing 24% with perfect payment history (98). 14 consecutive paid invoices. Client is 6 months into fixed fee engagement with strong momentum. Ideal moment for CAS or controller service upsell as business complexity increases. Could add $10K–$12K ARR.",
         "ignitionAction": "create_proposal",
-        "ignitionActionLabel": "Draft CAS Expansion Proposal",
+        "ignitionActionLabel": "Propose Services",
         "ignitionActionUrl": "/clients/cli_c3d4e5f6g7h8i9j0k1l2/proposals/new"
       },
       "availableActions": [
-        { "id": "create_proposal", "label": "Draft CAS Expansion Proposal", "destination": "/clients/cli_c3d4e5f6g7h8i9j0k1l2/proposals/new", "confidence_engine_primary": true },
-        { "id": "create_deal", "label": "Create Deal in Pipeline", "destination": "/deals", "confidence_engine_primary": false },
+        { "id": "create_proposal", "label": "Propose Services", "destination": "/clients/cli_c3d4e5f6g7h8i9j0k1l2/proposals/new", "confidence_engine_primary": true },
         { "id": "view_activity", "label": "View Activity Log", "destination": "/clients/cli_c3d4e5f6g7h8i9j0k1l2/activity", "confidence_engine_primary": false },
         { "id": "plan_for_later", "label": "Plan for Later", "destination": null, "confidence_engine_primary": false },
         { "id": "skip", "label": "Skip for Now", "destination": null, "confidence_engine_primary": false }
@@ -1271,11 +1268,11 @@
         "priority": "high",
         "reasoning": "Revenue up 11.2% with strong payment history (82). Proposal renews in 9 months. Consolidate into a $24,000 fixed fee to capture unbilled tax advisory services ($600/year) and remove completion-billing uncertainty ($3,000 pending). Tech clients respond well to transparent pricing.",
         "ignitionAction": "create_proposal",
-        "ignitionActionLabel": "Draft Fixed Fee Proposal",
+        "ignitionActionLabel": "Propose Services",
         "ignitionActionUrl": "/clients/cli_f6g7h8i9j0k1l2m3n4o5/proposals/new"
       },
       "availableActions": [
-        { "id": "create_proposal", "label": "Draft Fixed Fee Proposal", "destination": "/clients/cli_f6g7h8i9j0k1l2m3n4o5/proposals/new", "confidence_engine_primary": true },
+        { "id": "create_proposal", "label": "Propose Services", "destination": "/clients/cli_f6g7h8i9j0k1l2m3n4o5/proposals/new", "confidence_engine_primary": true },
         { "id": "send_payment_reminder", "label": "Send Payment Reminder ($1,200)", "destination": "/payments/collections/reminders", "confidence_engine_primary": false },
         { "id": "edit_client", "label": "Edit Client", "destination": "/clients/cli_f6g7h8i9j0k1l2m3n4o5/edit", "confidence_engine_primary": false },
         { "id": "view_activity", "label": "View Activity Log", "destination": "/clients/cli_f6g7h8i9j0k1l2m3n4o5/activity", "confidence_engine_primary": false },
@@ -1461,17 +1458,16 @@
         "outcomeAfterAction": "A brief check-in call 8 months into a renewed fixed-fee engagement reinforces the relationship and surfaces any scope changes early, before they become friction points."
       },
       "recommendedAction": {
-        "action": "Schedule mid-year check-in",
+        "action": "Plan for next renewal",
         "priority": "low",
-        "reasoning": "Recent successful fixed-fee renewal (July 2025) with 10% uplift. Perfect payment record (94), 20 consecutive paid invoices. Proposal renews in 4 months. Mid-year check-in reinforces relationship and surfaces potential scope adjustments before next renewal cycle.",
-        "ignitionAction": "schedule_meeting",
-        "ignitionActionLabel": "Schedule Check-In",
-        "ignitionActionUrl": "/clients/cli_j0k1l2m3n4o5p6q7r8s9/meetings"
+        "reasoning": "Recent successful fixed-fee renewal (July 2025) with 10% uplift. Perfect payment record (94), 20 consecutive paid invoices. Proposal renews in 4 months. Planning ahead for the next renewal cycle surfaces potential scope adjustments early.",
+        "ignitionAction": "plan_for_later",
+        "ignitionActionLabel": "Plan for Later",
+        "ignitionActionUrl": null
       },
       "availableActions": [
-        { "id": "schedule_meeting", "label": "Schedule Check-In", "destination": "/clients/cli_j0k1l2m3n4o5p6q7r8s9/meetings", "confidence_engine_primary": true },
+        { "id": "plan_for_later", "label": "Plan for Later", "destination": null, "confidence_engine_primary": true },
         { "id": "view_activity", "label": "View Activity Log", "destination": "/clients/cli_j0k1l2m3n4o5p6q7r8s9/activity", "confidence_engine_primary": false },
-        { "id": "plan_for_later", "label": "Plan for Later", "destination": null, "confidence_engine_primary": false },
         { "id": "skip", "label": "Skip for Now", "destination": null, "confidence_engine_primary": false }
       ],
       "triageStatus": null
@@ -1690,11 +1686,11 @@
         "priority": "urgent",
         "reasoning": "Proposal expired 36 days ago. $2,700 outstanding (incl. $2,200 completion-billed tax return). 1 prior failed payment. Delivering services with no contract is a legal and revenue risk. Create a fixed fee renewal at $12,000 that consolidates all 4 services, addresses the outstanding amount, and locks in automatic monthly billing.",
         "ignitionAction": "create_proposal",
-        "ignitionActionLabel": "Create Fixed Fee Renewal",
+        "ignitionActionLabel": "Send Renewal",
         "ignitionActionUrl": "/clients/cli_b2c3d4e5f6g7h8i9j0k1/proposals/new"
       },
       "availableActions": [
-        { "id": "create_proposal", "label": "Create Fixed Fee Renewal", "destination": "/clients/cli_b2c3d4e5f6g7h8i9j0k1/proposals/new", "confidence_engine_primary": true },
+        { "id": "create_proposal", "label": "Send Renewal", "destination": "/clients/cli_b2c3d4e5f6g7h8i9j0k1/proposals/new", "confidence_engine_primary": true },
         { "id": "send_payment_reminder", "label": "Send Payment Reminder ($2,700)", "destination": "/payments/collections/outstanding", "confidence_engine_primary": true },
         { "id": "request_payment_method", "label": "Request Bank Account Re-verification", "destination": "/clients/cli_b2c3d4e5f6g7h8i9j0k1/summary", "confidence_engine_primary": false },
         { "id": "view_activity", "label": "View Activity Log", "destination": "/clients/cli_b2c3d4e5f6g7h8i9j0k1/activity", "confidence_engine_primary": false },
@@ -1925,12 +1921,12 @@
         "priority": "high",
         "reasoning": "Proposal expires in 30 days. 1 outstanding invoice ($350). Tax return completion bill ($1,500) still unbilled. 2 unpriced services leaking $1,080/year. Fixed fee at $8,100 captures all of this and prevents a lapse into month-to-month. Revenue declining 8.1% makes repricing critical.",
         "ignitionAction": "create_proposal",
-        "ignitionActionLabel": "Draft Renewal Proposal",
+        "ignitionActionLabel": "Send Renewal",
         "ignitionActionUrl": "/clients/cli_a1b2c3d4e5f6g7h8i9j0/proposals/new"
       },
       "availableActions": [
-        { "id": "create_proposal", "label": "Draft Fixed Fee Renewal", "destination": "/clients/cli_a1b2c3d4e5f6g7h8i9j0/proposals/new", "confidence_engine_primary": true },
-        { "id": "resend_proposal", "label": "Resend Current Proposal", "destination": "/clients/cli_a1b2c3d4e5f6g7h8i9j0/proposals/prop_28410", "confidence_engine_primary": false },
+        { "id": "create_proposal", "label": "Send Renewal", "destination": "/clients/cli_a1b2c3d4e5f6g7h8i9j0/proposals/new", "confidence_engine_primary": true },
+        { "id": "resend_proposal", "label": "Resend Proposal", "destination": "/clients/cli_a1b2c3d4e5f6g7h8i9j0/proposals/prop_28410", "confidence_engine_primary": false },
         { "id": "send_payment_reminder", "label": "Send Payment Reminder ($350)", "destination": "/payments/collections/outstanding", "confidence_engine_primary": false },
         { "id": "edit_client", "label": "Edit Client", "destination": "/clients/cli_a1b2c3d4e5f6g7h8i9j0/edit", "confidence_engine_primary": false },
         { "id": "view_activity", "label": "View Activity Log", "destination": "/clients/cli_a1b2c3d4e5f6g7h8i9j0/activity", "confidence_engine_primary": false },

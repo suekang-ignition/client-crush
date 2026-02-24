@@ -1,5 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { X, Check, Star, RotateCcw, ArrowLeft, Zap, TrendingUp, TrendingDown, Clock, AlertTriangle, ChevronDown, FileCheck, Mail, Bell, FileText, Eye, Coins, Plus } from 'lucide-react';
+import { X, Check, Star, RotateCcw, ArrowLeft, TrendingUp, TrendingDown, Clock, AlertTriangle, Coins } from 'lucide-react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBolt } from '@fortawesome/free-solid-svg-icons';
 import clientDataJson from './clientData.json';
 
 // Transform JSON data to match component structure
@@ -78,16 +80,16 @@ const transformClientData = (jsonData) => {
 // Client data: contractValue, billing trend %, payments health
 const clientData = transformClientData(clientDataJson);
 
-// Sort clients by total revenue potential (current contract + opportunity value)
+// Sort clients by revenue opportunity value (highest first)
 clientData.sort((a, b) => {
-  const totalA = a.contractValue + (a.revenueOpportunity?.totalOpportunityValue || 0);
-  const totalB = b.contractValue + (b.revenueOpportunity?.totalOpportunityValue || 0);
-  return totalB - totalA;
+  const oppA = a.revenueOpportunity?.totalOpportunityValue || 0;
+  const oppB = b.revenueOpportunity?.totalOpportunityValue || 0;
+  return oppB - oppA;
 });
 
 const tagConfig = {
   "Revenue growing": { icon: TrendingUp, bg: "bg-emerald-50", text: "text-emerald-700", border: "border-emerald-200" },
-  "Upsell ready": { icon: Zap, bg: "bg-blue-50", text: "text-blue-700", border: "border-blue-200" },
+  "Upsell ready": { icon: faBolt, bg: "bg-blue-50", text: "text-blue-700", border: "border-blue-200" },
   "At risk": { icon: AlertTriangle, bg: "bg-red-50", text: "text-red-700", border: "border-red-200" },
   "Revenue declining": { icon: TrendingDown, bg: "bg-red-50", text: "text-red-700", border: "border-red-200" },
   "Late payment": { icon: Clock, bg: "bg-amber-50", text: "text-amber-700", border: "border-amber-200" },
@@ -117,27 +119,37 @@ const SwipeCard = ({ client, isTop, onSwipe, style }) => {
     let reasoning = client.details;
     let buttonLabel = 'Take Action';
 
-    // Make action labels more UX friendly based on PRIMARY action
+    // Map to Ignition feature names — same priority order as getCurrentActionLabel
     const actionLower = action.toLowerCase();
 
-    if (actionLower.includes('draft') && actionLower.includes('fixed')) buttonLabel = 'Draft Proposal';
-    else if (actionLower.includes('schedule') && actionLower.includes('review')) buttonLabel = 'Schedule Review';
-    else if (actionLower.includes('schedule') && actionLower.includes('meeting')) buttonLabel = 'Schedule Meeting';
-    else if (actionLower.includes('propose') && actionLower.includes('service')) buttonLabel = 'Propose Services';
-    else if (actionLower.includes('propose') && actionLower.includes('add-on')) buttonLabel = 'Propose Add-on';
-    else if (actionLower.includes('propose') && actionLower.includes('tax')) buttonLabel = 'Propose Add-on';
-    else if (actionLower.includes('propose') && actionLower.includes('expand')) buttonLabel = 'Propose Services';
-    else if (actionLower.includes('review')) buttonLabel = 'Review Account';
-    else if (actionLower.includes('cross-sell')) buttonLabel = 'Propose Services';
-    else if (actionLower.includes('upsell')) buttonLabel = 'Propose Services';
-    else if (actionLower.includes('complete') && actionLower.includes('verification')) buttonLabel = 'Complete Setup';
-    else if (actionLower.includes('update') && actionLower.includes('card')) buttonLabel = 'Update Card';
-    else if (actionLower.includes('update') && actionLower.includes('payment')) buttonLabel = 'Update Payment';
-    else if (actionLower.includes('request') && actionLower.includes('payment')) buttonLabel = 'Update Payment';
-    else if (actionLower.includes('resolve') && actionLower.includes('payment')) buttonLabel = 'Resolve Payment';
-    else if (actionLower.includes('reminder')) buttonLabel = 'Send Reminder';
-    else {
-      // Default: take first 2 words
+    if (actionLower.includes('renewal') || actionLower.includes('renew')) {
+      buttonLabel = 'Create Renewal';
+    } else if (actionLower.includes('payment method')) {
+      buttonLabel = 'Request Payment Method';
+    } else if (actionLower.includes('schedule') && actionLower.includes('review')) {
+      buttonLabel = 'Schedule Review';
+    } else if (actionLower.includes('schedule') && actionLower.includes('meeting')) {
+      buttonLabel = 'Schedule Meeting';
+    } else if (actionLower.includes('propose') || actionLower.includes('expansion') ||
+               actionLower.includes('expand') || actionLower.includes('upsell') ||
+               actionLower.includes('cross-sell') || actionLower.includes('draft') ||
+               actionLower.includes('fractional') || actionLower.includes('create')) {
+      buttonLabel = 'Create Proposal';
+    } else if (actionLower.includes('complete') && actionLower.includes('verification')) {
+      buttonLabel = 'Connect Payment Method';
+    } else if (actionLower.includes('update') && actionLower.includes('card')) {
+      buttonLabel = 'Update Payment Method';
+    } else if (actionLower.includes('update') && actionLower.includes('payment')) {
+      buttonLabel = 'Update Payments';
+    } else if (actionLower.includes('resolve') && actionLower.includes('payment')) {
+      buttonLabel = 'Send Payment Request';
+    } else if (actionLower.includes('request') && actionLower.includes('payment')) {
+      buttonLabel = 'Send Payment Request';
+    } else if (actionLower.includes('reminder')) {
+      buttonLabel = 'Send Reminder';
+    } else if (actionLower.includes('review')) {
+      buttonLabel = 'Review Account';
+    } else {
       const words = action.split(' ');
       buttonLabel = words.slice(0, 2).join(' ');
     }
@@ -229,11 +241,11 @@ const SwipeCard = ({ client, isTop, onSwipe, style }) => {
             className="absolute top-6 left-1/2 -translate-x-1/2 text-5xl font-black pointer-events-none z-20"
             style={{
               opacity: position.y < -40 ? Math.min(1, Math.abs(position.y) / 150) : 0,
-              color: '#3b82f6',
-              textShadow: '2px 2px 8px rgba(59, 130, 246, 0.2)'
+              color: '#7c3aed',
+              textShadow: '2px 2px 8px rgba(124, 58, 237, 0.2)'
             }}
           >
-            PRIORITY
+            ACTION
           </div>
         </>
       )}
@@ -283,11 +295,14 @@ const SwipeCard = ({ client, isTop, onSwipe, style }) => {
             {/* TIER 3: Conditional Signals */}
             <div className="flex flex-wrap gap-2">
               {client.tags.map((tag, index) => {
-                const config = tagConfig[tag] || { icon: Zap, bg: "bg-slate-50", text: "text-slate-700", border: "border-slate-200" };
-                const Icon = config.icon;
+                const config = tagConfig[tag] || { icon: faBolt, bg: "bg-slate-50", text: "text-slate-700", border: "border-slate-200" };
+                const isFaIcon = typeof config.icon === 'object' && config.icon.iconName;
                 return (
                   <span key={index} className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-semibold border shadow-sm ${config.bg} ${config.text} ${config.border}`}>
-                    <Icon className="w-3 h-3" />
+                    {isFaIcon
+                      ? <FontAwesomeIcon icon={config.icon} style={{ width: 12, height: 12 }} />
+                      : React.createElement(config.icon, { className: "w-3 h-3" })
+                    }
                     {tag}
                   </span>
                 );
@@ -415,7 +430,7 @@ const SwipeCard = ({ client, isTop, onSwipe, style }) => {
           <div className="mb-5 rounded-2xl p-6 border-4 border-violet-500 bg-white shadow-[0_6px_0_0_rgb(139,92,246),0_10px_15px_0_rgba(0,0,0,0.1)]">
             <div className="flex items-start gap-3">
               <div className="w-12 h-12 rounded-xl bg-violet-500 flex items-center justify-center flex-shrink-0 shadow-lg">
-                <Zap className="w-6 h-6 text-white" />
+                <FontAwesomeIcon icon={faBolt} style={{ width: 22, height: 22, color: 'white' }} />
               </div>
               <div className="flex-1 min-w-0">
                 <div className="text-xs font-bold text-violet-600 mb-1 uppercase tracking-wide">Recommended Action</div>
@@ -428,8 +443,7 @@ const SwipeCard = ({ client, isTop, onSwipe, style }) => {
                         Revenue Opportunity
                       </div>
                       <div className="flex items-center gap-1.5 text-base font-bold text-slate-900">
-                        <Plus className="w-4 h-4 text-emerald-600 flex-shrink-0" />
-                        <span>${client.revenueOpportunity.totalOpportunityValue.toLocaleString()}</span>
+                        <span>+${client.revenueOpportunity.totalOpportunityValue.toLocaleString()}</span>
                       </div>
                     </div>
                   </div>
@@ -547,7 +561,7 @@ const DecisionColumn = ({ title, icon, color, bgColor, clients, emptyMessage }) 
   </div>
 );
 
-export default function ClientCrush() {
+export default function ClientCrush({ onBack }) {
   const [clients, setClients] = useState(clientData);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [decisions, setDecisions] = useState({ engaged: [], skipped: [], actioned: [] });
@@ -555,40 +569,36 @@ export default function ClientCrush() {
   const [showCelebration, setShowCelebration] = useState(false);
   const [achievements, setAchievements] = useState([]);
 
-  // Get action button label for current client
+  // Get action button label for current client — maps to Ignition feature names
   const getCurrentActionLabel = () => {
     if (currentIndex >= clients.length) return 'Take Action';
     const client = clients[currentIndex];
 
-    // Prioritize the PRIMARY recommendedAction - only override for truly urgent payment issues
     const action = client.suggestedAction.toLowerCase();
 
-    // Make action labels more UX friendly based on PRIMARY action
-    if (action.includes('draft') && action.includes('fixed')) return 'Draft Proposal';
+    // Renewal actions (check before draft/propose — "draft renewal" should be Create Renewal)
+    if (action.includes('renewal') || action.includes('renew')) return 'Create Renewal';
+    // Payment method (more specific than generic "payment")
+    if (action.includes('payment method')) return 'Request Payment Method';
+    // Scheduling
     if (action.includes('schedule') && action.includes('review')) return 'Schedule Review';
     if (action.includes('schedule') && action.includes('meeting')) return 'Schedule Meeting';
-    if (action.includes('propose') && action.includes('service')) return 'Propose Services';
-    if (action.includes('propose') && action.includes('add-on')) return 'Propose Add-on';
-    if (action.includes('propose') && action.includes('tax')) return 'Propose Add-on';
-    if (action.includes('propose') && action.includes('expand')) return 'Propose Services';
+    // New proposals / upsell / expansion
+    if (action.includes('propose') || action.includes('expansion') ||
+        action.includes('expand') || action.includes('upsell') ||
+        action.includes('cross-sell') || action.includes('draft') ||
+        action.includes('fractional') || action.includes('create')) return 'Create Proposal';
+    // Payment setup / resolution
+    if (action.includes('complete') && action.includes('verification')) return 'Connect Payment Method';
+    if (action.includes('update') && action.includes('card')) return 'Update Payment Method';
+    if (action.includes('update') && action.includes('payment')) return 'Update Payments';
+    if (action.includes('resolve') && action.includes('payment')) return 'Send Payment Request';
+    if (action.includes('request') && action.includes('payment')) return 'Send Payment Request';
+    if (action.includes('reminder')) return 'Send Reminder';
     if (action.includes('review')) return 'Review Account';
-    if (action.includes('cross-sell')) return 'Propose Services';
-    if (action.includes('upsell')) return 'Propose Services';
-    if (action.includes('complete') && action.includes('verification')) return 'Complete Setup';
-    if (action.includes('update') && action.includes('card')) return 'Update Card';
-    if (action.includes('update') && action.includes('payment')) return 'Update Payment';
-    if (action.includes('request') && action.includes('payment')) return 'Update Payment';
 
-    // Only override with payment actions if recommendedAction itself is payment-related
-    if (action.includes('reminder') || action.includes('payment') || action.includes('resolve')) {
-      if (client.actionRequired?.failedPayments > 0) return 'Resolve Payment';
-      if (client.actionRequired?.expiringCards > 0) return 'Update Card';
-      if (client.latePayments > 0) return 'Send Reminder';
-    }
+    if (client.paymentReliability === 0) return 'Add Payment Method';
 
-    if (client.paymentReliability === 0) return 'Add Payment';
-
-    // Default: take first 2 words and capitalize
     const words = client.suggestedAction.split(' ');
     return words.slice(0, 2).join(' ');
   };
@@ -741,21 +751,21 @@ export default function ClientCrush() {
         </div>
       )}
 
-      <div className="relative z-20 px-12 pt-6 pb-5 bg-white border-b-2 border-slate-100">
-        <div className="max-w-[1400px] mx-auto">
-          <div className="flex items-center justify-between">
+      <div className="relative z-20 bg-white border-b border-slate-200">
+        <div className="max-w-[1400px] mx-auto px-12 py-5">
+          <div className="flex items-start justify-between mb-4">
             <div>
-              <h1 className="text-3xl font-semibold text-slate-900 mb-1.5">
-                <span className="mr-2">💘</span>Client Crush
+              <h1 className="text-3xl font-semibold text-slate-900 flex items-center gap-2 mb-1">
+                <span>💘</span>Client Crush
               </h1>
-              <p className="text-slate-600 text-base">Work through your clients and take the next best action.</p>
+              <p className="text-slate-500 text-sm">Work through your clients and take the next best action.</p>
             </div>
 
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2">
               <button
                 onClick={handleUndo}
                 disabled={currentIndex === 0}
-                className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white border-2 border-slate-200 hover:border-slate-300 disabled:opacity-30 disabled:cursor-not-allowed text-slate-700 transition-all font-semibold shadow-sm hover:shadow"
+                className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white border border-slate-200 hover:border-slate-300 disabled:opacity-30 disabled:cursor-not-allowed text-slate-600 text-sm transition-all font-medium hover:bg-slate-50"
               >
                 <RotateCcw className="w-4 h-4" />
                 Undo
@@ -763,25 +773,32 @@ export default function ClientCrush() {
 
               <button
                 onClick={handleReset}
-                className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white border-2 border-slate-200 hover:border-slate-300 text-slate-700 transition-all font-semibold shadow-sm hover:shadow"
+                className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white border border-slate-200 hover:border-slate-300 text-slate-600 text-sm transition-all font-medium hover:bg-slate-50"
               >
                 <ArrowLeft className="w-4 h-4" />
                 Start Over
               </button>
+
+              {onBack && (
+                <button
+                  onClick={onBack}
+                  className="flex items-center p-2 rounded-lg text-slate-400 hover:text-slate-700 hover:bg-slate-100 transition-colors"
+                >
+                  <X className="w-5 h-5" />
+                </button>
+              )}
             </div>
           </div>
 
-          <div className="mt-4">
-            <div className="flex justify-between text-sm text-slate-600 mb-3 font-medium">
-              <span>{currentIndex} reviewed</span>
-              <span>{clients.length - currentIndex} remaining</span>
-            </div>
-            <div className="bg-slate-100 rounded-full h-2 overflow-hidden">
-              <div
-                className="h-full bg-gradient-to-r from-pink-500 to-purple-500 transition-all duration-500 ease-out rounded-full"
-                style={{ width: `${progress}%` }}
-              />
-            </div>
+          <div className="flex justify-between text-sm text-slate-500 mb-2">
+            <span>{currentIndex} reviewed</span>
+            <span>{clients.length - currentIndex} remaining</span>
+          </div>
+          <div className="bg-slate-100 rounded-full h-1.5 overflow-hidden">
+            <div
+              className="h-full bg-gradient-to-r from-pink-500 to-purple-500 transition-all duration-500 ease-out rounded-full"
+              style={{ width: `${progress}%` }}
+            />
           </div>
         </div>
       </div>
@@ -908,7 +925,7 @@ export default function ClientCrush() {
                       className="w-full py-4 bg-violet-500 text-white rounded-2xl font-bold text-lg shadow-sm hover:bg-violet-600 active:bg-violet-700 transition-colors"
                     >
                       <div className="flex items-center justify-center gap-2">
-                        <Zap className="w-5 h-5" />
+                        <FontAwesomeIcon icon={faBolt} style={{ width: 18, height: 18 }} />
                         <span>{getCurrentActionLabel()}</span>
                       </div>
                     </button>
